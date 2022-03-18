@@ -1,3 +1,0 @@
-/home/roman/CLionProjects/ypprpo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/roman/CLionProjects/ypprpo/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/roman/CLionProjects/ypprpo/cmake-build-debug/CMakeFiles/ypprpo.dir
