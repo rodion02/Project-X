@@ -5,9 +5,11 @@ set(CMAKE_CXX_STANDARD 23)
 
 FILE(COPY Resources/Images/walltexture16.png DESTINATION "${CMAKE_BINARY_DIR}")
 
-find_package(SFML 2.5 COMPONENTS graphics REQUIRED)
+include_directories(SFML-2.5.1/include)
 
-include_directories(Resources/Images)
+find_package(SFML COMPONENTS graphics REQUIRED)
+
+
 
 add_executable(ypprpo Source/main.cpp)
 
