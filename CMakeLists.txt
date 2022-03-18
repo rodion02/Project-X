@@ -16,7 +16,7 @@ find_package(SFML REQUIRED COMPONENTS audio graphics window system)
 
 add_executable(ypprpo Source/main.cpp)
 
-if (SFML_FOUND)
+#if (SFML_FOUND)
     include_directories(${SFML_INCLUDE_DIR})
     target_link_libraries(${PROJECT_NAME} ${SFML_LIBRARIES} ${SFML_DEPENDENCIES})
-endif ()
+#endif ()
