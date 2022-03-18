@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 23)
 
 FILE(COPY Resources/Images/walltexture16.png DESTINATION "${CMAKE_BINARY_DIR}")
 
-set(SFML_ROOT SFML)
+set(SFML_DIR SFML)
 include_directories(SFML/include)
 find_package(SFML COMPONENTS graphics REQUIRED)
 
