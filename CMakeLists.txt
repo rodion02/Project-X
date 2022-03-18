@@ -7,4 +7,4 @@ find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
 
 add_executable(ypprpo main.cpp)
 
-target_link_libraries(ypprpo sfml-graphics sfml-audio sfml-network)
+target_link_libraries(ypprpo sfml-graphics sfml-audio)

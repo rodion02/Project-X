@@ -8,6 +8,7 @@
 
 #define mapWidth 24
 #define mapHeight 24
+#define MAP_CELL_SIZE 16
 
 std::string ConvertToString(int number){
     std::ostringstream buff;
@@ -61,6 +62,13 @@ int main()
     window.setFramerateLimit(60);
     sf::Clock clock = sf::Clock();
     sf::Time fps;
+
+
+    //create texture and sprite for walls
+    sf::Sprite map_wall_sprite;
+    sf::Texture map_wall_texture;
+    map_wall_texture.loadFromFile("MapWall" + std::to_string(MAP_CELL_SIZE) + ".png");
+    map_wall_sprite.setTexture(map_wall_texture);
 
     // Start the game loop
     while (window.isOpen()) {
@@ -186,10 +194,12 @@ int main()
 
             sf::Vertex line[2] =
                     {
-                            sf::Vertex(sf::Vector2f(x, drawStart), color),
-                            sf::Vertex(sf::Vector2f(x, drawEnd), color)
+                            sf::Vertex(sf::Vector2f(x, drawStart), color,sf::Vector2f(0.f, 0.f)),
+                            sf::Vertex(sf::Vector2f(x, drawEnd), color, sf::Vector2f(24.f, 24.f) )
                     };
-            window.draw(line , 2, sf::Lines);
+            sf::RenderStates states;
+            states.texture = &map_wall_texture;
+            window.draw(line , 2, sf::Lines, states);
 
         }
 
