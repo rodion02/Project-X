@@ -67,7 +67,7 @@ int main()
     //create texture and sprite for walls
     sf::Sprite map_wall_sprite;
     sf::Texture map_wall_texture;
-    map_wall_texture.loadFromFile("MapWall" + std::to_string(MAP_CELL_SIZE) + ".png");
+    map_wall_texture.loadFromFile("Resources/Images/walltexture" + std::to_string(MAP_CELL_SIZE) + ".png");
     map_wall_sprite.setTexture(map_wall_texture);
 
     // Start the game loop

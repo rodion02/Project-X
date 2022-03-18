@@ -3,8 +3,13 @@ project(ypprpo)
 
 set(CMAKE_CXX_STANDARD 23)
 
-find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
+FILE(COPY Resources/Images/walltexture16.png DESTINATION "${CMAKE_BINARY_DIR}")
 
-add_executable(ypprpo main.cpp)
+find_package(SFML 2.5 COMPONENTS graphics REQUIRED)
 
-target_link_libraries(ypprpo sfml-graphics sfml-audio)
+include_directories(Resources/Images)
+
+add_executable(ypprpo Source/main.cpp)
+
+
+target_link_libraries(ypprpo sfml-graphics)
