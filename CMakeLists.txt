@@ -10,7 +10,7 @@ set(SFML_ROOT SFML2.5.1)
 include_directories(SFML2.5.1/include)
 #set(SFML_STATIC_LIBRARIES TRUE)
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake_modules")
-find_package(SFML REQUIRED COMPONENTS audio graphics window system)
+find_package(SFML 2 REQUIRED COMPONENTS audio graphics window system)
 
 
 
