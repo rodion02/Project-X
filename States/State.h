@@ -5,26 +5,13 @@
 #ifndef YPPRPO_STATE_H
 #define YPPRPO_STATE_H
 
+#include "Entity.h"
 
-#include <vector>
-#include <iostream>
-#include <ctime>
-#include <cstdlib>
-#include <cmath>
-#include <sstream>
-#include <fstream>
-#include <stack>
-#include <map>
-
-#include <SFML/Graphics.hpp>
-#include <SFML/Window.hpp>
-#include <SFML/System.hpp>
-#include <SFML/Audio.hpp>
-#include <SFML/Network.hpp>
 
 class State {
-
 private:
+
+protected:
     sf::RenderWindow* window;
     std::vector<sf::Texture> textures;
     bool quit;
