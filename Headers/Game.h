@@ -5,7 +5,7 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include "../States/GameState.h"
+#include "MainMenuState.h"
 
 
 class Game {
@@ -23,9 +23,13 @@ private:
     //                      then remove game state and get
     //                      to previous (menu) state
 
+    std::map<std::string, int> supportedKeys;
+
     //Initialization
     void initWindow();
+    void initKeys();
     void initStates();
+
 
 public:
     //Constructors/Destructors

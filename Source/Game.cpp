@@ -8,15 +8,14 @@
 //Initializer functions
 void Game::initWindow() {
 
-    std::ifstream ifs("/home/roman/CLionProjects/ypprpo/Config/window.ini");
+    std::ifstream ifs("window.ini");
 
     std::string title = "None";
     sf::VideoMode window_bounds(800, 600);
     unsigned framerate_limit = 120;
     bool vertical_sync_enabled = false;
 
-    if (ifs.is_open())
-    {
+    if (ifs.is_open()) {
         std::getline(ifs, title);
         ifs >> window_bounds.width >> window_bounds.height;
         ifs >> framerate_limit;
@@ -30,14 +29,37 @@ void Game::initWindow() {
     this->window->setVerticalSyncEnabled(vertical_sync_enabled);
 }
 
-void Game::initStates() {
-    this->states.push(new GameState(this->window));
+void Game::initKeys() {
+    std::ifstream ifs("supported_keys.ini");
+    if(ifs.is_open()) {
+        std::string key = "";
+        int key_value = 0;
+        while (ifs >> key >> key_value) {
+            this->supportedKeys[key] = key_value;
+        }
+
+    }
+
+    ifs.close();
+
+    //TEMPORARY DEBUG TODO: REMOVE LATER
+    for (auto i : this->supportedKeys)
+        std::cout << i.first << " " << i.second << "\n";
 }
+
+void Game::initStates() {
+    this->states.push(new MainMenuState(this->window, &this->supportedKeys));
+
+    this->states.push(new GameState(this->window, &this->supportedKeys));
+}
+
+
 
 //Constructors/Destructors
 Game::Game(){
     /*Creates a SFML window using options from a window.ini file. */
     this->initWindow();
+    this->initKeys();
     this->initStates();
 }
 
@@ -112,6 +134,8 @@ void Game::run() {
         this->render();
     }
 }
+
+
 
 
 
