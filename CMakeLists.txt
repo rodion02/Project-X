@@ -14,7 +14,7 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(Catch2)
 
-
+FILE(COPY Resources/Images/Backgrounds/bg1.png DESTINATION "${CMAKE_BINARY_DIR}")
 FILE(COPY Config/window.ini DESTINATION "${CMAKE_BINARY_DIR}")
 FILE(COPY Config/supported_keys.ini DESTINATION "${CMAKE_BINARY_DIR}")
 FILE(COPY Config/gamestate_keybinds.ini DESTINATION "${CMAKE_BINARY_DIR}")
