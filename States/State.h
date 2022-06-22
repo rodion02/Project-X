@@ -6,6 +6,7 @@
 #define YPPRPO_STATE_H
 
 #include "Entity.h"
+#include "Player.h"
 
 
 class State {
@@ -23,7 +24,7 @@ protected:
     sf::Vector2f mousePosView;
 
     //Resources
-    std::vector<sf::Texture> textures;
+    std::map<std::string, sf::Texture> textures;
 
     //Functions
     virtual void initKeybinds() = 0;
@@ -34,10 +35,10 @@ public:
 
     const bool& getQuit() const;
 
+    void endState();
     // pure virtual, you can not create objects of State
-    virtual void checkForQuit(); //make sure we can end a state
 
-    virtual void endState() = 0;
+
     virtual void updateMousePositions();
     virtual void updateInput(const float& dt) = 0;
     virtual void update(const float& dt) = 0;
