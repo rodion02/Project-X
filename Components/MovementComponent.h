@@ -24,6 +24,9 @@
 //add it to an entity
 //check if entity has its component,
 //and then we'll be able to move this player
+
+enum movement_states {IDLE = 0, MOVING, MOVING_LEFT, MOVING_RIGHT, MOVING_UP, MOVING_DOWN };
+
 class MovementComponent {
 private:
     sf::Sprite& sprite;
@@ -44,6 +47,12 @@ public:
     const sf::Vector2f& getVelocity() const;
 
     //Functions
+    const bool getState(const short unsigned state) const;
+    const bool idle() const;
+    const bool moving() const;
+    const bool movingLeft() const;
+    const bool movingRight() const;
+
     void move(const float x, const float y, const float& dt);
     void update(const float& dt);
 };

@@ -20,9 +20,9 @@ FILE(COPY Config/supported_keys.ini DESTINATION "${CMAKE_BINARY_DIR}")
 FILE(COPY Config/gamestate_keybinds.ini DESTINATION "${CMAKE_BINARY_DIR}")
 FILE(COPY Config/mainmenustate_keybinds.ini DESTINATION "${CMAKE_BINARY_DIR}")
 FILE(COPY Resources/Fonts/Dosis/static/Dosis-ExtraLight.ttf DESTINATION "${CMAKE_BINARY_DIR}")
-FILE(COPY Resources/Images/Sprites/Player/seq_antlerKnight DESTINATION "${CMAKE_BINARY_DIR}")
-FILE(COPY Resources/Images/Sprites/Player/IDLE_LEFT_SHEET.png DESTINATION "${CMAKE_BINARY_DIR}")
-FILE(COPY Resources/Images/Sprites/Player/WALK_LEFT_SHEET.png DESTINATION "${CMAKE_BINARY_DIR}")
+FILE(COPY Resources/Images/Sprites/Player/PLAYER_SHEET.png DESTINATION "${CMAKE_BINARY_DIR}")
+FILE(COPY Resources/sfml.png DESTINATION "${CMAKE_BINARY_DIR}")
+
 
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake_modules")
 find_package(SFML 2.5 COMPONENTS audio graphics window system REQUIRED)
