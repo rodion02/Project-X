@@ -20,6 +20,7 @@ public:
     virtual ~Player();
 
     //Functions
+    virtual void update(const float& dt);
 };
 
 
