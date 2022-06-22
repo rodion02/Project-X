@@ -13,16 +13,15 @@ private:
     void initVariables();
 //everything under protected can be accessed in child class
 protected:
-    sf::Texture* texture; //pointer to avoid duplicate textures
-    sf::Sprite* sprite;
+    sf::Sprite sprite;
 
-    MovementComponent * movementComponent;
+    MovementComponent* movementComponent;
 public:
     Entity();
     virtual ~Entity();
 
     //Component functions
-    void createSprite(sf::Texture* texture);
+    void setTexture(sf::Texture& texture);
     void createMovementComponent(const float maxVelocity);
     //Functions
     virtual void setPosition(const float x, const float y);
