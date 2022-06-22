@@ -4,7 +4,7 @@ on:
   push:
     branches: [ Develop, master ]
   pull_request:
-    branches: [ Develop, walking_release ]
+    branches: [ Develop, master ]
 
 env:
   # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
