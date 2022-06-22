@@ -13,9 +13,7 @@ FetchContent_Declare(
 )
 
 FetchContent_MakeAvailable(Catch2)
-list(APPEND CMAKE_MODULE_PATH ${catch2_SOURCE_DIR}/extras)
-include(CTest)
-include(Catch)
+
 
 
 FILE(COPY Resources/Images/Backgrounds/bg1.png DESTINATION "${CMAKE_BINARY_DIR}")
@@ -34,5 +32,4 @@ include_directories(Headers States Config Tests Resources Components)# if (SFML_
 add_executable(ypprpo Source/main.cpp Source/Game.cpp Headers/Game.h States/State.cpp States/State.h States/GameState.cpp States/GameState.h Source/Entity.cpp Headers/Entity.h Tests/CatchTests.cpp States/MainMenuState.cpp States/MainMenuState.h Resources/Button.cpp Resources/Button.h Source/Player.cpp Headers/Player.h Components/MovementComponent.cpp Components/MovementComponent.h Components/AnimationComponent.cpp Components/AnimationComponent.h)
 target_link_libraries(${PROJECT_NAME} PRIVATE ${SFML_LIBRARIES} ${SFML_DEPENDENCIES} Catch2WithMain)
 
-catch_discover_tests(ypprpo)
 # endif ()

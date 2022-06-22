@@ -16,9 +16,9 @@
 int main(const int argc, const char* argv[])
 {
     Catch::Session().run(argc, argv);
-//Uncomment to run GAME
-//    Game game;
-//    game.run();
+
+    Game game;
+    game.run();
 
     return 0;
 }
