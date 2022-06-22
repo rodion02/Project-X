@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classGameState" kind="class" language="C++" prot="public">
+    <compoundname>GameState</compoundname>
+    <basecompoundref refid="classState" prot="public" virt="non-virtual">State</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGameState_1a580b319e1866f1bb79328c7d09581bdf" prot="private" static="no" mutable="no">
+        <type><ref refid="classPlayer" kindref="compound">Player</ref> *</type>
+        <definition>Player* GameState::player</definition>
+        <argsstring></argsstring>
+        <name>player</name>
+        <qualifiedname>GameState::player</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/GameState.h" line="15" column="12" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/GameState.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classGameState_1a369be725e6ad3532bb76f19631440e28" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GameState::initKeybinds</definition>
+        <argsstring>()</argsstring>
+        <name>initKeybinds</name>
+        <qualifiedname>GameState::initKeybinds</qualifiedname>
+        <reimplements refid="classState_1a40dbbe230041d608a14cab0268721e3e">initKeybinds</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/GameState.h" line="18" column="10" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/GameState.cpp" bodystart="8" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classGameState_1a5543ac4d29c4ea2f3791c213da98cd7c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameState::initTextures</definition>
+        <argsstring>()</argsstring>
+        <name>initTextures</name>
+        <qualifiedname>GameState::initTextures</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/GameState.h" line="19" column="10" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/GameState.cpp" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classGameState_1aaf25fb74494ab501ab6b025cca4ce78d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameState::initPlayers</definition>
+        <argsstring>()</argsstring>
+        <name>initPlayers</name>
+        <qualifiedname>GameState::initPlayers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/GameState.h" line="20" column="10" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/GameState.cpp" bodystart="29" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGameState_1a930c1f4560cbf8728529be747d5dc54f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GameState::GameState</definition>
+        <argsstring>(sf::RenderWindow *window, std::map&lt; std::string, int &gt; *supportedKeys, std::stack&lt; State * &gt; *states)</argsstring>
+        <name>GameState</name>
+        <qualifiedname>GameState::GameState</qualifiedname>
+        <param>
+          <type>sf::RenderWindow *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type>std::map&lt; std::string, int &gt; *</type>
+          <declname>supportedKeys</declname>
+        </param>
+        <param>
+          <type>std::stack&lt; <ref refid="classState" kindref="compound">State</ref> * &gt; *</type>
+          <declname>states</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/GameState.h" line="22" column="5" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/GameState.cpp" bodystart="34" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classGameState_1ae623df5042cd0c17daa3394fdcb397b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>GameState::~GameState</definition>
+        <argsstring>()</argsstring>
+        <name>~GameState</name>
+        <qualifiedname>GameState::~GameState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/GameState.h" line="23" column="13" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/GameState.cpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classGameState_1a5dc4ac4f28b9487c9e35b8c452c7c58f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GameState::updateInput</definition>
+        <argsstring>(const float &amp;dt)</argsstring>
+        <name>updateInput</name>
+        <qualifiedname>GameState::updateInput</qualifiedname>
+        <reimplements refid="classState_1a00168e8529643611cb98497e9f0b48c2">updateInput</reimplements>
+        <param>
+          <type>const float &amp;</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/GameState.h" line="26" column="10" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/GameState.cpp" bodystart="47" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classGameState_1ac135e64a5c269ecc94d806ed5255ca4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GameState::update</definition>
+        <argsstring>(const float &amp;dt)</argsstring>
+        <name>update</name>
+        <qualifiedname>GameState::update</qualifiedname>
+        <reimplements refid="classState_1a2c2021d448defc57111202b74ed0aaa0">update</reimplements>
+        <param>
+          <type>const float &amp;</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/GameState.h" line="27" column="10" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/GameState.cpp" bodystart="63" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classGameState_1a805aea59388b8a5f302752333a86cf22" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GameState::render</definition>
+        <argsstring>(sf::RenderTarget *target=nullptr)</argsstring>
+        <name>render</name>
+        <qualifiedname>GameState::render</qualifiedname>
+        <reimplements refid="classState_1aa1f36587befc2c03c4033366e5000d2c">render</reimplements>
+        <param>
+          <type>sf::RenderTarget *</type>
+          <declname>target</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/GameState.h" line="28" column="10" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/GameState.cpp" bodystart="70" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>GameState</label>
+        <link refid="classGameState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>State</label>
+        <link refid="classState"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>GameState</label>
+        <link refid="classGameState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>State</label>
+        <link refid="classState"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/roman/CLionProjects/ypprpo/gamelib/GameState.h" line="11" column="1" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/GameState.h" bodystart="13" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classState_1a27907b80e927649f92e4dc6a845a9213" prot="public" virt="non-virtual"><scope>GameState</scope><name>endState</name></member>
+      <member refid="classGameState_1a930c1f4560cbf8728529be747d5dc54f" prot="public" virt="non-virtual"><scope>GameState</scope><name>GameState</name></member>
+      <member refid="classState_1a18c3b970753bab2937141803644aaf24" prot="public" virt="non-virtual"><scope>GameState</scope><name>getQuit</name></member>
+      <member refid="classGameState_1a369be725e6ad3532bb76f19631440e28" prot="private" virt="virtual"><scope>GameState</scope><name>initKeybinds</name></member>
+      <member refid="classGameState_1aaf25fb74494ab501ab6b025cca4ce78d" prot="private" virt="non-virtual"><scope>GameState</scope><name>initPlayers</name></member>
+      <member refid="classGameState_1a5543ac4d29c4ea2f3791c213da98cd7c" prot="private" virt="non-virtual"><scope>GameState</scope><name>initTextures</name></member>
+      <member refid="classState_1a21d462450f448eeab1e021c78b1b418a" prot="protected" virt="non-virtual"><scope>GameState</scope><name>keybinds</name></member>
+      <member refid="classState_1ae55b0beb4bfe6bb44a9fc1fc05d8b90c" prot="protected" virt="non-virtual"><scope>GameState</scope><name>mousePosScreen</name></member>
+      <member refid="classState_1a9f930912be370fcd0ecae58e17e0c35e" prot="protected" virt="non-virtual"><scope>GameState</scope><name>mousePosView</name></member>
+      <member refid="classState_1ae19be9c58de5545c8cd162f11969d6ee" prot="protected" virt="non-virtual"><scope>GameState</scope><name>mousePosWindow</name></member>
+      <member refid="classGameState_1a580b319e1866f1bb79328c7d09581bdf" prot="private" virt="non-virtual"><scope>GameState</scope><name>player</name></member>
+      <member refid="classState_1a67102294962f79cfb8fa952a113a351d" prot="protected" virt="non-virtual"><scope>GameState</scope><name>quit</name></member>
+      <member refid="classGameState_1a805aea59388b8a5f302752333a86cf22" prot="public" virt="virtual"><scope>GameState</scope><name>render</name></member>
+      <member refid="classState_1a970569fe825bb7cc18f48fecf4f1b9d1" prot="public" virt="non-virtual"><scope>GameState</scope><name>State</name></member>
+      <member refid="classState_1a5692fac721147048fe1d2656f8a7a687" prot="protected" virt="non-virtual"><scope>GameState</scope><name>states</name></member>
+      <member refid="classState_1ace88186091734de43149a68efbe55e35" prot="protected" virt="non-virtual"><scope>GameState</scope><name>supportedKeys</name></member>
+      <member refid="classState_1af747b588cad4683d34c38a03c2f8d046" prot="protected" virt="non-virtual"><scope>GameState</scope><name>textures</name></member>
+      <member refid="classGameState_1ac135e64a5c269ecc94d806ed5255ca4b" prot="public" virt="virtual"><scope>GameState</scope><name>update</name></member>
+      <member refid="classGameState_1a5dc4ac4f28b9487c9e35b8c452c7c58f" prot="public" virt="virtual"><scope>GameState</scope><name>updateInput</name></member>
+      <member refid="classState_1a55cd17e1b46e2a7345f3b98f01c123b8" prot="public" virt="virtual"><scope>GameState</scope><name>updateMousePositions</name></member>
+      <member refid="classState_1ae6259a383c98ae7496266a76a9daf478" prot="protected" virt="non-virtual"><scope>GameState</scope><name>window</name></member>
+      <member refid="classGameState_1ae623df5042cd0c17daa3394fdcb397b3" prot="public" virt="virtual"><scope>GameState</scope><name>~GameState</name></member>
+      <member refid="classState_1afab438d92b90dc18d194dbd9c9c8bab3" prot="public" virt="virtual"><scope>GameState</scope><name>~State</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

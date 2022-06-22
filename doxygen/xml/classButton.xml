@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classButton" kind="class" language="C++" prot="public">
+    <compoundname>Button</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classButton_1ac5ba41d86a32c67f0b085f7a3fe91bce" prot="private" static="no" mutable="no">
+        <type>short unsigned</type>
+        <definition>short unsigned Button::buttonState</definition>
+        <argsstring></argsstring>
+        <name>buttonState</name>
+        <qualifiedname>Button::buttonState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" line="18" column="20" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classButton_1ab86193fd8a7d8930880ddd5890adcd5f" prot="private" static="no" mutable="no">
+        <type>sf::RectangleShape</type>
+        <definition>sf::RectangleShape Button::shape</definition>
+        <argsstring></argsstring>
+        <name>shape</name>
+        <qualifiedname>Button::shape</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" line="20" column="24" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classButton_1af970d8dff2c3c918bde0508ec36e38c7" prot="private" static="no" mutable="no">
+        <type>sf::Font *</type>
+        <definition>sf::Font* Button::font</definition>
+        <argsstring></argsstring>
+        <name>font</name>
+        <qualifiedname>Button::font</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" line="21" column="14" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classButton_1aadf908b0777f2ae5c28d949fda3384c1" prot="private" static="no" mutable="no">
+        <type>sf::Text</type>
+        <definition>sf::Text Button::text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <qualifiedname>Button::text</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" line="22" column="14" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classButton_1a9e01347304b0bc517e6e0771f9445146" prot="private" static="no" mutable="no">
+        <type>sf::Color</type>
+        <definition>sf::Color Button::textIdleColor</definition>
+        <argsstring></argsstring>
+        <name>textIdleColor</name>
+        <qualifiedname>Button::textIdleColor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" line="24" column="15" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classButton_1a360c265509e3535c28fa726eaad573eb" prot="private" static="no" mutable="no">
+        <type>sf::Color</type>
+        <definition>sf::Color Button::textHoverColor</definition>
+        <argsstring></argsstring>
+        <name>textHoverColor</name>
+        <qualifiedname>Button::textHoverColor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" line="25" column="15" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classButton_1a31497c11885b9d81e74d1fc42d7b82b3" prot="private" static="no" mutable="no">
+        <type>sf::Color</type>
+        <definition>sf::Color Button::textActiveColor</definition>
+        <argsstring></argsstring>
+        <name>textActiveColor</name>
+        <qualifiedname>Button::textActiveColor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" line="26" column="15" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classButton_1a19700a262c93e332bd979fa884304cf2" prot="private" static="no" mutable="no">
+        <type>sf::Color</type>
+        <definition>sf::Color Button::idleColor</definition>
+        <argsstring></argsstring>
+        <name>idleColor</name>
+        <qualifiedname>Button::idleColor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" line="28" column="15" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classButton_1a721b37218f6069a780443a39eb298fa0" prot="private" static="no" mutable="no">
+        <type>sf::Color</type>
+        <definition>sf::Color Button::hoverColor</definition>
+        <argsstring></argsstring>
+        <name>hoverColor</name>
+        <qualifiedname>Button::hoverColor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" line="29" column="15" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classButton_1a57999ab0bc25caa01e44d29f491496fd" prot="private" static="no" mutable="no">
+        <type>sf::Color</type>
+        <definition>sf::Color Button::activeColor</definition>
+        <argsstring></argsstring>
+        <name>activeColor</name>
+        <qualifiedname>Button::activeColor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" line="30" column="15" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classButton_1a219f4212ee9c9d72bbb37f4ab6ab7105" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Button::Button</definition>
+        <argsstring>(float x, float y, float width, float height, sf::Font *font, std::string text, unsigned character_size, sf::Color text_idle_color, sf::Color text_hover_color, sf::Color text_active_color, sf::Color idle_color, sf::Color hover_color, sf::Color active_color)</argsstring>
+        <name>Button</name>
+        <qualifiedname>Button::Button</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>sf::Font *</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>character_size</declname>
+        </param>
+        <param>
+          <type>sf::Color</type>
+          <declname>text_idle_color</declname>
+        </param>
+        <param>
+          <type>sf::Color</type>
+          <declname>text_hover_color</declname>
+        </param>
+        <param>
+          <type>sf::Color</type>
+          <declname>text_active_color</declname>
+        </param>
+        <param>
+          <type>sf::Color</type>
+          <declname>idle_color</declname>
+        </param>
+        <param>
+          <type>sf::Color</type>
+          <declname>hover_color</declname>
+        </param>
+        <param>
+          <type>sf::Color</type>
+          <declname>active_color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" line="33" column="5" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/Button.cpp" bodystart="9" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classButton_1a2a001eb9c3cc8ae54768a850dd345002" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Button::~Button</definition>
+        <argsstring>()</argsstring>
+        <name>~Button</name>
+        <qualifiedname>Button::~Button</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" line="37" column="5" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/Button.cpp" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classButton_1a0b4af36b349ee2d8154624760dc1fe32" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const bool</type>
+        <definition>const bool Button::isPressed</definition>
+        <argsstring>() const</argsstring>
+        <name>isPressed</name>
+        <qualifiedname>Button::isPressed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" line="40" column="16" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/Button.cpp" bodystart="42" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classButton_1a4850f4214ac94c54d8cf82db40e30d8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Button::update</definition>
+        <argsstring>(const sf::Vector2f mousePos)</argsstring>
+        <name>update</name>
+        <qualifiedname>Button::update</qualifiedname>
+        <param>
+          <type>const sf::Vector2f</type>
+          <declname>mousePos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" line="43" column="10" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/Button.cpp" bodystart="50" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classButton_1a7d275a122f7d50dde3bdd02f97f1be00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Button::render</definition>
+        <argsstring>(sf::RenderTarget *target)</argsstring>
+        <name>render</name>
+        <qualifiedname>Button::render</qualifiedname>
+        <param>
+          <type>sf::RenderTarget *</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" line="44" column="10" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/Button.cpp" bodystart="85" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" line="16" column="1" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/Button.h" bodystart="16" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classButton_1a57999ab0bc25caa01e44d29f491496fd" prot="private" virt="non-virtual"><scope>Button</scope><name>activeColor</name></member>
+      <member refid="classButton_1a219f4212ee9c9d72bbb37f4ab6ab7105" prot="public" virt="non-virtual"><scope>Button</scope><name>Button</name></member>
+      <member refid="classButton_1ac5ba41d86a32c67f0b085f7a3fe91bce" prot="private" virt="non-virtual"><scope>Button</scope><name>buttonState</name></member>
+      <member refid="classButton_1af970d8dff2c3c918bde0508ec36e38c7" prot="private" virt="non-virtual"><scope>Button</scope><name>font</name></member>
+      <member refid="classButton_1a721b37218f6069a780443a39eb298fa0" prot="private" virt="non-virtual"><scope>Button</scope><name>hoverColor</name></member>
+      <member refid="classButton_1a19700a262c93e332bd979fa884304cf2" prot="private" virt="non-virtual"><scope>Button</scope><name>idleColor</name></member>
+      <member refid="classButton_1a0b4af36b349ee2d8154624760dc1fe32" prot="public" virt="non-virtual"><scope>Button</scope><name>isPressed</name></member>
+      <member refid="classButton_1a7d275a122f7d50dde3bdd02f97f1be00" prot="public" virt="non-virtual"><scope>Button</scope><name>render</name></member>
+      <member refid="classButton_1ab86193fd8a7d8930880ddd5890adcd5f" prot="private" virt="non-virtual"><scope>Button</scope><name>shape</name></member>
+      <member refid="classButton_1aadf908b0777f2ae5c28d949fda3384c1" prot="private" virt="non-virtual"><scope>Button</scope><name>text</name></member>
+      <member refid="classButton_1a31497c11885b9d81e74d1fc42d7b82b3" prot="private" virt="non-virtual"><scope>Button</scope><name>textActiveColor</name></member>
+      <member refid="classButton_1a360c265509e3535c28fa726eaad573eb" prot="private" virt="non-virtual"><scope>Button</scope><name>textHoverColor</name></member>
+      <member refid="classButton_1a9e01347304b0bc517e6e0771f9445146" prot="private" virt="non-virtual"><scope>Button</scope><name>textIdleColor</name></member>
+      <member refid="classButton_1a4850f4214ac94c54d8cf82db40e30d8c" prot="public" virt="non-virtual"><scope>Button</scope><name>update</name></member>
+      <member refid="classButton_1a2a001eb9c3cc8ae54768a850dd345002" prot="public" virt="non-virtual"><scope>Button</scope><name>~Button</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

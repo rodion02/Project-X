@@ -1,0 +1,74 @@
+\hypertarget{classState}{}\doxysection{State Class Reference}
+\label{classState}\index{State@{State}}
+Inheritance diagram for State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classState}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classState_a970569fe825bb7cc18f48fecf4f1b9d1}\label{classState_a970569fe825bb7cc18f48fecf4f1b9d1}} 
+{\bfseries State} (sf\+::\+Render\+Window $\ast$window, std\+::map$<$ std\+::string, int $>$ $\ast$supported\+Keys, std\+::stack$<$ \mbox{\hyperlink{classState}{State}} $\ast$ $>$ $\ast$states)
+\item 
+\mbox{\Hypertarget{classState_a18c3b970753bab2937141803644aaf24}\label{classState_a18c3b970753bab2937141803644aaf24}} 
+const bool \& {\bfseries get\+Quit} () const
+\item 
+\mbox{\Hypertarget{classState_a27907b80e927649f92e4dc6a845a9213}\label{classState_a27907b80e927649f92e4dc6a845a9213}} 
+void {\bfseries end\+State} ()
+\item 
+\mbox{\Hypertarget{classState_a55cd17e1b46e2a7345f3b98f01c123b8}\label{classState_a55cd17e1b46e2a7345f3b98f01c123b8}} 
+virtual void {\bfseries update\+Mouse\+Positions} ()
+\item 
+\mbox{\Hypertarget{classState_a00168e8529643611cb98497e9f0b48c2}\label{classState_a00168e8529643611cb98497e9f0b48c2}} 
+virtual void {\bfseries update\+Input} (const float \&dt)=0
+\item 
+\mbox{\Hypertarget{classState_a2c2021d448defc57111202b74ed0aaa0}\label{classState_a2c2021d448defc57111202b74ed0aaa0}} 
+virtual void {\bfseries update} (const float \&dt)=0
+\item 
+\mbox{\Hypertarget{classState_aa1f36587befc2c03c4033366e5000d2c}\label{classState_aa1f36587befc2c03c4033366e5000d2c}} 
+virtual void {\bfseries render} (sf\+::\+Render\+Target $\ast$target=nullptr)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classState_a40dbbe230041d608a14cab0268721e3e}\label{classState_a40dbbe230041d608a14cab0268721e3e}} 
+virtual void {\bfseries init\+Keybinds} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classState_a5692fac721147048fe1d2656f8a7a687}\label{classState_a5692fac721147048fe1d2656f8a7a687}} 
+std\+::stack$<$ \mbox{\hyperlink{classState}{State}} $\ast$ $>$ $\ast$ {\bfseries states}
+\item 
+\mbox{\Hypertarget{classState_ae6259a383c98ae7496266a76a9daf478}\label{classState_ae6259a383c98ae7496266a76a9daf478}} 
+sf\+::\+Render\+Window $\ast$ {\bfseries window}
+\item 
+\mbox{\Hypertarget{classState_ace88186091734de43149a68efbe55e35}\label{classState_ace88186091734de43149a68efbe55e35}} 
+std\+::map$<$ std\+::string, int $>$ $\ast$ {\bfseries supported\+Keys}
+\item 
+\mbox{\Hypertarget{classState_a21d462450f448eeab1e021c78b1b418a}\label{classState_a21d462450f448eeab1e021c78b1b418a}} 
+std\+::map$<$ std\+::string, int $>$ {\bfseries keybinds}
+\item 
+\mbox{\Hypertarget{classState_a67102294962f79cfb8fa952a113a351d}\label{classState_a67102294962f79cfb8fa952a113a351d}} 
+bool {\bfseries quit}
+\item 
+\mbox{\Hypertarget{classState_ae55b0beb4bfe6bb44a9fc1fc05d8b90c}\label{classState_ae55b0beb4bfe6bb44a9fc1fc05d8b90c}} 
+sf\+::\+Vector2i {\bfseries mouse\+Pos\+Screen}
+\item 
+\mbox{\Hypertarget{classState_ae19be9c58de5545c8cd162f11969d6ee}\label{classState_ae19be9c58de5545c8cd162f11969d6ee}} 
+sf\+::\+Vector2i {\bfseries mouse\+Pos\+Window}
+\item 
+\mbox{\Hypertarget{classState_a9f930912be370fcd0ecae58e17e0c35e}\label{classState_a9f930912be370fcd0ecae58e17e0c35e}} 
+sf\+::\+Vector2f {\bfseries mouse\+Pos\+View}
+\item 
+\mbox{\Hypertarget{classState_af747b588cad4683d34c38a03c2f8d046}\label{classState_af747b588cad4683d34c38a03c2f8d046}} 
+std\+::map$<$ std\+::string, sf\+::\+Texture $>$ {\bfseries textures}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/roman/\+CLion\+Projects/ypprpo/gamelib/State.\+h\item 
+/home/roman/\+CLion\+Projects/ypprpo/gamelib/State.\+cpp\end{DoxyCompactItemize}

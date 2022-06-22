@@ -1,0 +1,38 @@
+\hypertarget{GameState_8h_source}{}\doxysection{Game\+State.\+h}
+\label{GameState_8h_source}\index{/home/roman/CLionProjects/ypprpo/gamelib/GameState.h@{/home/roman/CLionProjects/ypprpo/gamelib/GameState.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by roman on 5/2/22.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef YPPRPO\_GAMESTATE\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define YPPRPO\_GAMESTATE\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}State.h"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{classGameState}{GameState}} :}
+\DoxyCodeLine{12     \textcolor{keyword}{public} \mbox{\hyperlink{classState}{State}}}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14 \textcolor{keyword}{private}:}
+\DoxyCodeLine{15     \mbox{\hyperlink{classPlayer}{Player}}* player;}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17     \textcolor{comment}{//Functions}}
+\DoxyCodeLine{18     \textcolor{keywordtype}{void} initKeybinds();}
+\DoxyCodeLine{19     \textcolor{keywordtype}{void} initTextures();}
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} initPlayers();}
+\DoxyCodeLine{21 \textcolor{keyword}{public}:}
+\DoxyCodeLine{22     \mbox{\hyperlink{classGameState}{GameState}}(sf::RenderWindow* window, std::map<std::string, int>* supportedKeys, std::stack<State*>* states);}
+\DoxyCodeLine{23     \textcolor{keyword}{virtual} \mbox{\hyperlink{classGameState}{\string~GameState}}();}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     \textcolor{comment}{//Functions}}
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} updateInput(\textcolor{keyword}{const} \textcolor{keywordtype}{float}\& dt);}
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} update(\textcolor{keyword}{const} \textcolor{keywordtype}{float}\& dt);}
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} render(sf::RenderTarget* target = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{29 \};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//YPPRPO\_GAMESTATE\_H}}
+
+\end{DoxyCode}

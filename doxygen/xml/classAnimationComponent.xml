@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classAnimationComponent" kind="class" language="C++" prot="public">
+    <compoundname>AnimationComponent</compoundname>
+    <innerclass refid="classAnimationComponent_1_1Animation" prot="private">AnimationComponent::Animation</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAnimationComponent_1a6552fda57c68a843220d055447fe588f" prot="private" static="no" mutable="no">
+        <type>sf::Sprite &amp;</type>
+        <definition>sf::Sprite&amp; AnimationComponent::sprite</definition>
+        <argsstring></argsstring>
+        <name>sprite</name>
+        <qualifiedname>AnimationComponent::sprite</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/AnimationComponent.h" line="70" column="16" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/AnimationComponent.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAnimationComponent_1af1c56aee6c8bcf235793db0b3e9d60b9" prot="private" static="no" mutable="no">
+        <type>sf::Texture &amp;</type>
+        <definition>sf::Texture&amp; AnimationComponent::textureSheet</definition>
+        <argsstring></argsstring>
+        <name>textureSheet</name>
+        <qualifiedname>AnimationComponent::textureSheet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/AnimationComponent.h" line="71" column="17" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/AnimationComponent.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAnimationComponent_1a6f001845d7f484c5d2fca6a1847063f7" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, Animation * &gt;</type>
+        <definition>std::map&lt;std::string, Animation*&gt; AnimationComponent::animations</definition>
+        <argsstring></argsstring>
+        <name>animations</name>
+        <qualifiedname>AnimationComponent::animations</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/AnimationComponent.h" line="72" column="14" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/AnimationComponent.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAnimationComponent_1ab24fbcea207c3bd33e3e748752bc9d36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AnimationComponent::AnimationComponent</definition>
+        <argsstring>(sf::Sprite &amp;sprite, sf::Texture &amp;texture_sheet)</argsstring>
+        <name>AnimationComponent</name>
+        <qualifiedname>AnimationComponent::AnimationComponent</qualifiedname>
+        <param>
+          <type>sf::Sprite &amp;</type>
+          <declname>sprite</declname>
+        </param>
+        <param>
+          <type>sf::Texture &amp;</type>
+          <declname>texture_sheet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/AnimationComponent.h" line="75" column="5" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/AnimationComponent.cpp" bodystart="7" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnimationComponent_1ad35cdc747a5578fdea681486f063f515" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>AnimationComponent::~AnimationComponent</definition>
+        <argsstring>()</argsstring>
+        <name>~AnimationComponent</name>
+        <qualifiedname>AnimationComponent::~AnimationComponent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/AnimationComponent.h" line="76" column="13" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/AnimationComponent.cpp" bodystart="12" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnimationComponent_1a4a4ba518851cb5e20865cf9f803bfb64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AnimationComponent::addAnimation</definition>
+        <argsstring>(const std::string key, float animation_timer, int start_frame_x, int start_frame_y, int frames_x, int frames_y, int width, int height)</argsstring>
+        <name>addAnimation</name>
+        <qualifiedname>AnimationComponent::addAnimation</qualifiedname>
+        <param>
+          <type>const std::string</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>animation_timer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start_frame_x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start_frame_y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>frames_x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>frames_y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/AnimationComponent.h" line="79" column="10" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/AnimationComponent.cpp" bodystart="19" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnimationComponent_1aca17e048c3e7c32cde01e0be358def79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AnimationComponent::play</definition>
+        <argsstring>(const std::string key, const float &amp;dt)</argsstring>
+        <name>play</name>
+        <qualifiedname>AnimationComponent::play</qualifiedname>
+        <param>
+          <type>const std::string</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const float &amp;</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/AnimationComponent.h" line="83" column="10" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/AnimationComponent.cpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/roman/CLionProjects/ypprpo/gamelib/AnimationComponent.h" line="18" column="1" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/AnimationComponent.h" bodystart="18" bodyend="84"/>
+    <listofallmembers>
+      <member refid="classAnimationComponent_1a4a4ba518851cb5e20865cf9f803bfb64" prot="public" virt="non-virtual"><scope>AnimationComponent</scope><name>addAnimation</name></member>
+      <member refid="classAnimationComponent_1ab24fbcea207c3bd33e3e748752bc9d36" prot="public" virt="non-virtual"><scope>AnimationComponent</scope><name>AnimationComponent</name></member>
+      <member refid="classAnimationComponent_1a6f001845d7f484c5d2fca6a1847063f7" prot="private" virt="non-virtual"><scope>AnimationComponent</scope><name>animations</name></member>
+      <member refid="classAnimationComponent_1aca17e048c3e7c32cde01e0be358def79" prot="public" virt="non-virtual"><scope>AnimationComponent</scope><name>play</name></member>
+      <member refid="classAnimationComponent_1a6552fda57c68a843220d055447fe588f" prot="private" virt="non-virtual"><scope>AnimationComponent</scope><name>sprite</name></member>
+      <member refid="classAnimationComponent_1af1c56aee6c8bcf235793db0b3e9d60b9" prot="private" virt="non-virtual"><scope>AnimationComponent</scope><name>textureSheet</name></member>
+      <member refid="classAnimationComponent_1ad35cdc747a5578fdea681486f063f515" prot="public" virt="virtual"><scope>AnimationComponent</scope><name>~AnimationComponent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

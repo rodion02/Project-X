@@ -1,0 +1,55 @@
+\hypertarget{State_8h_source}{}\doxysection{State.\+h}
+\label{State_8h_source}\index{/home/roman/CLionProjects/ypprpo/gamelib/State.h@{/home/roman/CLionProjects/ypprpo/gamelib/State.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by roman on 4/29/22.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef YPPRPO\_STATE\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define YPPRPO\_STATE\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}Entity.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}Player.h"{}}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{classState}{State}} \{}
+\DoxyCodeLine{13 \textcolor{keyword}{private}:}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{16     std::stack<State*>* states; \textcolor{comment}{// pointer to original states from game}}
+\DoxyCodeLine{17     sf::RenderWindow* window;}
+\DoxyCodeLine{18     std::map<std::string, int>* supportedKeys;}
+\DoxyCodeLine{19     std::map<std::string, int> keybinds;}
+\DoxyCodeLine{20     \textcolor{keywordtype}{bool} quit;}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     sf::Vector2i mousePosScreen;}
+\DoxyCodeLine{23     sf::Vector2i mousePosWindow;}
+\DoxyCodeLine{24     sf::Vector2f mousePosView;}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \textcolor{comment}{//Resources}}
+\DoxyCodeLine{27     std::map<std::string, sf::Texture> textures;}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \textcolor{comment}{//Functions}}
+\DoxyCodeLine{30     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} initKeybinds() = 0;}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{keyword}{public}:}
+\DoxyCodeLine{33     \mbox{\hyperlink{classState}{State}}(sf::RenderWindow* window, std::map<std::string, int>* supportedKeys, std::stack<State*>* states);}
+\DoxyCodeLine{34     \textcolor{keyword}{virtual} \mbox{\hyperlink{classState}{\string~State}}();}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     \textcolor{keyword}{const} \textcolor{keywordtype}{bool}\& getQuit() \textcolor{keyword}{const};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} endState();}
+\DoxyCodeLine{39     \textcolor{comment}{// pure virtual, you can not create objects of State}}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} updateMousePositions();}
+\DoxyCodeLine{43     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} updateInput(\textcolor{keyword}{const} \textcolor{keywordtype}{float}\& dt) = 0;}
+\DoxyCodeLine{44     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} update(\textcolor{keyword}{const} \textcolor{keywordtype}{float}\& dt) = 0;}
+\DoxyCodeLine{45     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} render(sf::RenderTarget* target = \textcolor{keyword}{nullptr}) = 0; \textcolor{comment}{//if nothing is given we render a window, also can send specific target}}
+\DoxyCodeLine{46 \};}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//YPPRPO\_STATE\_H}}
+
+\end{DoxyCode}

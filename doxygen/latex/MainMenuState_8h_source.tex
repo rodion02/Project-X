@@ -1,0 +1,44 @@
+\hypertarget{MainMenuState_8h_source}{}\doxysection{Main\+Menu\+State.\+h}
+\label{MainMenuState_8h_source}\index{/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.h@{/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by roman on 5/20/22.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef YPPRPO\_MAINMENUSTATE\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define YPPRPO\_MAINMENUSTATE\_H}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}GameState.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}Button.h"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{classMainMenuState}{MainMenuState}} :}
+\DoxyCodeLine{11         \textcolor{keyword}{public} \mbox{\hyperlink{classState}{State}}\{}
+\DoxyCodeLine{12 \textcolor{keyword}{private}:}
+\DoxyCodeLine{13     \textcolor{comment}{//Variables}}
+\DoxyCodeLine{14     sf::Texture backgroundTexture;}
+\DoxyCodeLine{15     sf::RectangleShape background;}
+\DoxyCodeLine{16     sf::Font font;}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     std::map<std::string, Button*> buttons;}
+\DoxyCodeLine{19     \textcolor{comment}{//Functions}}
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} initVariables();}
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} initBackground();}
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} initFonts();}
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} initKeybinds();}
+\DoxyCodeLine{24     \textcolor{keywordtype}{void} initButtons();}
+\DoxyCodeLine{25 \textcolor{keyword}{public}:}
+\DoxyCodeLine{26     \mbox{\hyperlink{classMainMenuState}{MainMenuState}}(sf::RenderWindow* window, std::map<std::string, int>* supportedKeys, std::stack<State*>* states);}
+\DoxyCodeLine{27     \textcolor{keyword}{virtual} \mbox{\hyperlink{classMainMenuState}{\string~MainMenuState}}();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \textcolor{comment}{//Functions}}
+\DoxyCodeLine{30     \textcolor{keywordtype}{void} updateInput(\textcolor{keyword}{const} \textcolor{keywordtype}{float}\& dt);}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} updateButtons();}
+\DoxyCodeLine{32     \textcolor{keywordtype}{void} update(\textcolor{keyword}{const} \textcolor{keywordtype}{float}\& dt);}
+\DoxyCodeLine{33      \textcolor{keywordtype}{void} renderButtons(sf::RenderTarget* target = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{34     \textcolor{keywordtype}{void} render(sf::RenderTarget* target = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{35 \};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//YPPRPO\_MAINMENUSTATE\_H}}
+
+\end{DoxyCode}

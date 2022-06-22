@@ -1,0 +1,67 @@
+\hypertarget{MovementComponent_8h_source}{}\doxysection{Movement\+Component.\+h}
+\label{MovementComponent_8h_source}\index{/home/roman/CLionProjects/ypprpo/gamelib/MovementComponent.h@{/home/roman/CLionProjects/ypprpo/gamelib/MovementComponent.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by roman on 6/20/22.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef YPPRPO\_MOVEMENTCOMPONENT\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define YPPRPO\_MOVEMENTCOMPONENT\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <ctime>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <cstdlib>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <cmath>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <stack>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <SFML/Graphics.hpp>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <SFML/Window.hpp>}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include <SFML/System.hpp>}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include <SFML/Audio.hpp>}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include <SFML/Network.hpp>}}
+\DoxyCodeLine{23 \textcolor{comment}{//idea is to create a movement component}}
+\DoxyCodeLine{24 \textcolor{comment}{//add it to an entity}}
+\DoxyCodeLine{25 \textcolor{comment}{//check if entity has its component,}}
+\DoxyCodeLine{26 \textcolor{comment}{//and then we'll be able to move this player}}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{keyword}{enum} movement\_states \{IDLE = 0, MOVING, MOVING\_LEFT, MOVING\_RIGHT, MOVING\_UP, MOVING\_DOWN \};}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keyword}{class }\mbox{\hyperlink{classMovementComponent}{MovementComponent}} \{}
+\DoxyCodeLine{31 \textcolor{keyword}{private}:}
+\DoxyCodeLine{32     sf::Sprite\& sprite;}
+\DoxyCodeLine{33     \textcolor{keywordtype}{float} maxVelocity;}
+\DoxyCodeLine{34     \textcolor{keywordtype}{float} acceleration;}
+\DoxyCodeLine{35     \textcolor{keywordtype}{float} deceleration;}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     sf::Vector2f velocity;}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39     \textcolor{comment}{//Initializer functions}}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 \textcolor{keyword}{public}:}
+\DoxyCodeLine{42     \mbox{\hyperlink{classMovementComponent}{MovementComponent}}(sf::Sprite\& sprite,}
+\DoxyCodeLine{43                       \textcolor{keywordtype}{float} maxVelocity, \textcolor{keywordtype}{float} acceleration, \textcolor{keywordtype}{float} deceleration);}
+\DoxyCodeLine{44     \textcolor{keyword}{virtual} \mbox{\hyperlink{classMovementComponent}{\string~MovementComponent}}();}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     \textcolor{comment}{//Accessors}}
+\DoxyCodeLine{47     \textcolor{keyword}{const} sf::Vector2f\& getVelocity() \textcolor{keyword}{const};}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49     \textcolor{comment}{//Functions}}
+\DoxyCodeLine{50     \textcolor{keyword}{const} \textcolor{keywordtype}{bool} getState(\textcolor{keyword}{const} \textcolor{keywordtype}{short} \textcolor{keywordtype}{unsigned} state) \textcolor{keyword}{const};}
+\DoxyCodeLine{51     \textcolor{keyword}{const} \textcolor{keywordtype}{bool} idle() \textcolor{keyword}{const};}
+\DoxyCodeLine{52     \textcolor{keyword}{const} \textcolor{keywordtype}{bool} moving() \textcolor{keyword}{const};}
+\DoxyCodeLine{53     \textcolor{keyword}{const} \textcolor{keywordtype}{bool} movingLeft() \textcolor{keyword}{const};}
+\DoxyCodeLine{54     \textcolor{keyword}{const} \textcolor{keywordtype}{bool} movingRight() \textcolor{keyword}{const};}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56     \textcolor{keywordtype}{void} move(\textcolor{keyword}{const} \textcolor{keywordtype}{float} x, \textcolor{keyword}{const} \textcolor{keywordtype}{float} y, \textcolor{keyword}{const} \textcolor{keywordtype}{float}\& dt);}
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} update(\textcolor{keyword}{const} \textcolor{keywordtype}{float}\& dt);}
+\DoxyCodeLine{58 \};}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
