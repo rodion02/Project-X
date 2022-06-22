@@ -5,21 +5,7 @@
 #ifndef YPPRPO_ENTITY_H
 #define YPPRPO_ENTITY_H
 
-#include <vector>
-#include <iostream>
-#include <ctime>
-#include <cstdlib>
-#include <cmath>
-#include <sstream>
-#include <fstream>
-#include <stack>
-#include <map>
-
-#include <SFML/Graphics.hpp>
-#include <SFML/Window.hpp>
-#include <SFML/System.hpp>
-#include <SFML/Audio.hpp>
-#include <SFML/Network.hpp>
+#include "MovementComponent.h"
 
 // base for characters
 class Entity {
@@ -30,14 +16,14 @@ protected:
     sf::Texture* texture; //pointer to avoid duplicate textures
     sf::Sprite* sprite;
 
-    float movementSpeed;
-
+    MovementComponent * movementComponent;
 public:
     Entity();
     virtual ~Entity();
 
     //Component functions
     void createSprite(sf::Texture* texture);
+    void createMovementComponent(const float maxVelocity);
     //Functions
     virtual void setPosition(const float x, const float y);
     virtual void move(const float& dt, const float x, const float y);
