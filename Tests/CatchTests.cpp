@@ -29,10 +29,10 @@ TEST_CASE("sf::RenderWindow", "[renderwindow]")
 //    sf::Texture shapeTexture;
 //    shapeTexture.loadFromFile("sfml.png");
 //    shape.setTexture(&shapeTexture);
-
-    REQUIRE(shapeTexture.getSize().x == 256);
-    REQUIRE(shapeTexture.getSize().y == 256);
-    REQUIRE(shape.getTexture() == &shapeTexture);
+//
+//    REQUIRE(shapeTexture.getSize().x == 256);
+//    REQUIRE(shapeTexture.getSize().y == 256);
+//    REQUIRE(shape.getTexture() == &shapeTexture);
 
     sf::IntRect r1(0, 2, 20, 5);
     sf::IntRect r2(19, 0, 20, 5);
