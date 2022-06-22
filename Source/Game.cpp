@@ -60,8 +60,8 @@ void Game::initKeys() {
     ifs.close();
 
     //TEMPORARY DEBUG TODO: REMOVE LATER
-    for (auto i : this->supportedKeys)
-        std::cout << i.first << " " << i.second << "\n";
+//    for (auto i : this->supportedKeys)
+//        std::cout << i.first << " " << i.second << "\n";
 }
 
 void Game::initStates() {

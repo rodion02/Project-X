@@ -16,6 +16,7 @@
 int main(const int argc, const char* argv[])
 {
     Catch::Session().run(argc, argv);
+
     Game game;
     game.run();
 
