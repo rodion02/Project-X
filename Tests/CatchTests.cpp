@@ -5,9 +5,11 @@
 
 
 
+
 #include <catch2/catch_test_macros.hpp>
 
 #include "Game.h"
+
 
 TEST_CASE("sf::RenderWindow", "[renderwindow]")
 {
