@@ -1,6 +1,6 @@
 # Project-X
 [![CMake](https://github.com/rodion02/Project-X/actions/workflows/cmake.yml/badge.svg)](https://github.com/rodion02/Project-X/actions/workflows/cmake.yml)
-[![CodeQL](https://github.com/rodion02/Project-X/actions/workflows/codeql-analysis.yml/badge.svg?branch=Develop)](https://github.com/rodion02/Project-X/actions/workflows/codeql-analysis.yml)
+[![CodeQL](https://github.com/rodion02/Project-X/actions/workflows/codeql-analysis.yml/badge.svg?branch=master)](https://github.com/rodion02/Project-X/actions/workflows/codeql-analysis.yml)
 
 ## Project-X (WiP)
 This is temporary name of our C++ game   
