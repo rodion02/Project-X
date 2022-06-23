@@ -1,0 +1,62 @@
+\hypertarget{Game_8h_source}{}\doxysection{Game.\+h}
+\label{Game_8h_source}\index{/home/roman/CLionProjects/ypprpo/gamelib/Game.h@{/home/roman/CLionProjects/ypprpo/gamelib/Game.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by roman on 4/1/22.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef GAME\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define GAME\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}MainMenuState.h"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{classGame}{Game}} \{}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{private}:}
+\DoxyCodeLine{16     \textcolor{comment}{//Variables}}
+\DoxyCodeLine{17     sf::RenderWindow *window;}
+\DoxyCodeLine{18     sf::Event sfEvent;}
+\DoxyCodeLine{19     std::vector<sf::VideoMode> videoModes;}
+\DoxyCodeLine{20     sf::ContextSettings windowSettings;}
+\DoxyCodeLine{21     \textcolor{keywordtype}{bool} fullscreen;}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     sf::Clock dtClock;}
+\DoxyCodeLine{24     \textcolor{keywordtype}{float} dt;}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     std::stack<State*> states; \textcolor{comment}{//state is virtual, only pointer}}
+\DoxyCodeLine{27     \textcolor{comment}{//stack of game states, main menu -\/> game state}}
+\DoxyCodeLine{28     \textcolor{comment}{//                      then remove game state and get}}
+\DoxyCodeLine{29     \textcolor{comment}{//                      to previous (menu) state}}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     std::map<std::string, int> supportedKeys;}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \textcolor{comment}{//Initialization}}
+\DoxyCodeLine{37 \textcolor{comment}{}    \textcolor{keywordtype}{void} initVariables();}
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} initWindow();}
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} initKeys();}
+\DoxyCodeLine{40     \textcolor{keywordtype}{void} initStates();}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 \textcolor{keyword}{public}:}
+\DoxyCodeLine{44     \textcolor{comment}{//Constructors/Destructors}}
+\DoxyCodeLine{45     \mbox{\hyperlink{classGame}{Game}}();}
+\DoxyCodeLine{46     \textcolor{keyword}{virtual} \mbox{\hyperlink{classGame}{\string~Game}}();}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50     \textcolor{keywordtype}{void} endApplication();}
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} \mbox{\hyperlink{classGame_a8a513f3fa9524a00cb5b009fefa32c3a}{updateDt}}();}
+\DoxyCodeLine{53     \textcolor{keywordtype}{void} updateSFMLEvents();}
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} update();}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} \mbox{\hyperlink{classGame_a15ddd769261d923827a3cdf41499c843}{render}}();}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{60     \textcolor{keywordtype}{void} \mbox{\hyperlink{classGame_a1ab78f5ed0d5ea879157357cf2fb2afa}{run}}();}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 \};}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

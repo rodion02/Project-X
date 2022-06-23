@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.5" xml:lang="en-US">
+  <compound refid="classAnimationComponent_1_1Animation" kind="class"><name>AnimationComponent::Animation</name>
+    <member refid="classAnimationComponent_1_1Animation_1ab0e647834a0a572f95385b708be320e6" kind="variable"><name>sprite</name></member>
+    <member refid="classAnimationComponent_1_1Animation_1a1ca6099108b4439cb6bc3d7ba3aadad4" kind="variable"><name>textureSheet</name></member>
+    <member refid="classAnimationComponent_1_1Animation_1a7944e35a07ceb7aa85a03995501d0dae" kind="variable"><name>animationTimer</name></member>
+    <member refid="classAnimationComponent_1_1Animation_1ad0b47cb9d7fa9ba2ff1f201bfcaa4f05" kind="variable"><name>timer</name></member>
+    <member refid="classAnimationComponent_1_1Animation_1aaae889fb3be85293abde0671664ba422" kind="variable"><name>width</name></member>
+    <member refid="classAnimationComponent_1_1Animation_1a97514aa0a92c42b32cd977dbd3b365f2" kind="variable"><name>height</name></member>
+    <member refid="classAnimationComponent_1_1Animation_1a6db5bcb3c0e20df7248c937f541c118e" kind="variable"><name>startRect</name></member>
+    <member refid="classAnimationComponent_1_1Animation_1a063dae131ef9c87984f04332c4df8b68" kind="variable"><name>currentRect</name></member>
+    <member refid="classAnimationComponent_1_1Animation_1af6e686db3dcd3cd918984b591dda60c6" kind="variable"><name>endRect</name></member>
+    <member refid="classAnimationComponent_1_1Animation_1abfaeb62af9963d9b90f7f4056b53b046" kind="function"><name>Animation</name></member>
+    <member refid="classAnimationComponent_1_1Animation_1a32f5a44a924f2d17954d3a1388c19371" kind="function"><name>play</name></member>
+    <member refid="classAnimationComponent_1_1Animation_1acb1b1c58f3808f1fedbcdf62454a2220" kind="function"><name>reset</name></member>
+  </compound>
+  <compound refid="classAnimationComponent" kind="class"><name>AnimationComponent</name>
+    <member refid="classAnimationComponent_1a6552fda57c68a843220d055447fe588f" kind="variable"><name>sprite</name></member>
+    <member refid="classAnimationComponent_1af1c56aee6c8bcf235793db0b3e9d60b9" kind="variable"><name>textureSheet</name></member>
+    <member refid="classAnimationComponent_1a6f001845d7f484c5d2fca6a1847063f7" kind="variable"><name>animations</name></member>
+    <member refid="classAnimationComponent_1ab24fbcea207c3bd33e3e748752bc9d36" kind="function"><name>AnimationComponent</name></member>
+    <member refid="classAnimationComponent_1ad35cdc747a5578fdea681486f063f515" kind="function"><name>~AnimationComponent</name></member>
+    <member refid="classAnimationComponent_1a4a4ba518851cb5e20865cf9f803bfb64" kind="function"><name>addAnimation</name></member>
+    <member refid="classAnimationComponent_1aca17e048c3e7c32cde01e0be358def79" kind="function"><name>play</name></member>
+  </compound>
+  <compound refid="classButton" kind="class"><name>Button</name>
+    <member refid="classButton_1ac5ba41d86a32c67f0b085f7a3fe91bce" kind="variable"><name>buttonState</name></member>
+    <member refid="classButton_1ab86193fd8a7d8930880ddd5890adcd5f" kind="variable"><name>shape</name></member>
+    <member refid="classButton_1af970d8dff2c3c918bde0508ec36e38c7" kind="variable"><name>font</name></member>
+    <member refid="classButton_1aadf908b0777f2ae5c28d949fda3384c1" kind="variable"><name>text</name></member>
+    <member refid="classButton_1a9e01347304b0bc517e6e0771f9445146" kind="variable"><name>textIdleColor</name></member>
+    <member refid="classButton_1a360c265509e3535c28fa726eaad573eb" kind="variable"><name>textHoverColor</name></member>
+    <member refid="classButton_1a31497c11885b9d81e74d1fc42d7b82b3" kind="variable"><name>textActiveColor</name></member>
+    <member refid="classButton_1a19700a262c93e332bd979fa884304cf2" kind="variable"><name>idleColor</name></member>
+    <member refid="classButton_1a721b37218f6069a780443a39eb298fa0" kind="variable"><name>hoverColor</name></member>
+    <member refid="classButton_1a57999ab0bc25caa01e44d29f491496fd" kind="variable"><name>activeColor</name></member>
+    <member refid="classButton_1a219f4212ee9c9d72bbb37f4ab6ab7105" kind="function"><name>Button</name></member>
+    <member refid="classButton_1a2a001eb9c3cc8ae54768a850dd345002" kind="function"><name>~Button</name></member>
+    <member refid="classButton_1a0b4af36b349ee2d8154624760dc1fe32" kind="function"><name>isPressed</name></member>
+    <member refid="classButton_1a4850f4214ac94c54d8cf82db40e30d8c" kind="function"><name>update</name></member>
+    <member refid="classButton_1a7d275a122f7d50dde3bdd02f97f1be00" kind="function"><name>render</name></member>
+  </compound>
+  <compound refid="classEntity" kind="class"><name>Entity</name>
+    <member refid="classEntity_1a48ef4ab143b8d0211877c9f6be42e824" kind="variable"><name>sprite</name></member>
+    <member refid="classEntity_1a03968c6e74a176ffe496e428550faa91" kind="variable"><name>movementComponent</name></member>
+    <member refid="classEntity_1a268d12375d14979ec9af95e9ec7eb9fb" kind="variable"><name>animationComponent</name></member>
+    <member refid="classEntity_1aa9119b2f67ff8e369a3e58ef104a7087" kind="function"><name>initVariables</name></member>
+    <member refid="classEntity_1a980f368aa07ce358583982821533a54a" kind="function"><name>Entity</name></member>
+    <member refid="classEntity_1adf6d3f7cb1b2ba029b6b048a395cc8ae" kind="function"><name>~Entity</name></member>
+    <member refid="classEntity_1a0e2e68071fbe4490a619b4985e643d3b" kind="function"><name>setTexture</name></member>
+    <member refid="classEntity_1a16540b41cf19af516751984e678bbfbf" kind="function"><name>createMovementComponent</name></member>
+    <member refid="classEntity_1ad6036f1e8331eac1cf2efd0dff9b1218" kind="function"><name>createAnimationComponent</name></member>
+    <member refid="classEntity_1ab634ca7ef80f912d4da76f341e28b241" kind="function"><name>setPosition</name></member>
+    <member refid="classEntity_1a55ca11ade330a86ab3b45e9b380154bf" kind="function"><name>move</name></member>
+    <member refid="classEntity_1ab2329f370183bc3acdeb6854bfed7aa4" kind="function"><name>update</name></member>
+    <member refid="classEntity_1a11a242b1b0796933326c902d6f3449a4" kind="function"><name>render</name></member>
+  </compound>
+  <compound refid="classGame" kind="class"><name>Game</name>
+    <member refid="classGame_1af00d15651edd39b7c28262b23bb50c7a" kind="variable"><name>window</name></member>
+    <member refid="classGame_1a1392fa61566de5b31a8d5e22586f3dcc" kind="variable"><name>sfEvent</name></member>
+    <member refid="classGame_1a7df52512ffd83cef82a960b395ad929c" kind="variable"><name>videoModes</name></member>
+    <member refid="classGame_1a9dec581886448c7335512e92b1b7864e" kind="variable"><name>windowSettings</name></member>
+    <member refid="classGame_1a026034417d95688ab99ba2e96e064b7f" kind="variable"><name>fullscreen</name></member>
+    <member refid="classGame_1a255dd8ce84d69a79cdec0454400a4bc8" kind="variable"><name>dtClock</name></member>
+    <member refid="classGame_1a5184b0439c5cefb45050d0bfaca9ac97" kind="variable"><name>dt</name></member>
+    <member refid="classGame_1ab953bd17e03bc976b1dc13eb6dde9ee0" kind="variable"><name>states</name></member>
+    <member refid="classGame_1a0ebf5e039be4084b26cbb1de8c6468a7" kind="variable"><name>supportedKeys</name></member>
+    <member refid="classGame_1aa7255464a62947a22ebcf9f0e5e6c52d" kind="function"><name>initVariables</name></member>
+    <member refid="classGame_1a15f85bb1959ffeae84f17c7f08db9018" kind="function"><name>initWindow</name></member>
+    <member refid="classGame_1a51bd4898283e795b5f95ee2db1653229" kind="function"><name>initKeys</name></member>
+    <member refid="classGame_1a9374c8f07e57e5697fb0b35f51d96361" kind="function"><name>initStates</name></member>
+    <member refid="classGame_1ad59df6562a58a614fda24622d3715b65" kind="function"><name>Game</name></member>
+    <member refid="classGame_1ae3d112ca6e0e55150d2fdbc704474530" kind="function"><name>~Game</name></member>
+    <member refid="classGame_1a7ab64d477b806da35ee0aebe46e24af3" kind="function"><name>endApplication</name></member>
+    <member refid="classGame_1a8a513f3fa9524a00cb5b009fefa32c3a" kind="function"><name>updateDt</name></member>
+    <member refid="classGame_1aec4876cfb285b9301b39d3a134bd608a" kind="function"><name>updateSFMLEvents</name></member>
+    <member refid="classGame_1a79df6376b332d63c9eca0dcee30305c3" kind="function"><name>update</name></member>
+    <member refid="classGame_1a15ddd769261d923827a3cdf41499c843" kind="function"><name>render</name></member>
+    <member refid="classGame_1a1ab78f5ed0d5ea879157357cf2fb2afa" kind="function"><name>run</name></member>
+  </compound>
+  <compound refid="classGameState" kind="class"><name>GameState</name>
+    <member refid="classGameState_1a580b319e1866f1bb79328c7d09581bdf" kind="variable"><name>player</name></member>
+    <member refid="classGameState_1a369be725e6ad3532bb76f19631440e28" kind="function"><name>initKeybinds</name></member>
+    <member refid="classGameState_1a5543ac4d29c4ea2f3791c213da98cd7c" kind="function"><name>initTextures</name></member>
+    <member refid="classGameState_1aaf25fb74494ab501ab6b025cca4ce78d" kind="function"><name>initPlayers</name></member>
+    <member refid="classGameState_1a930c1f4560cbf8728529be747d5dc54f" kind="function"><name>GameState</name></member>
+    <member refid="classGameState_1ae623df5042cd0c17daa3394fdcb397b3" kind="function"><name>~GameState</name></member>
+    <member refid="classGameState_1a5dc4ac4f28b9487c9e35b8c452c7c58f" kind="function"><name>updateInput</name></member>
+    <member refid="classGameState_1ac135e64a5c269ecc94d806ed5255ca4b" kind="function"><name>update</name></member>
+    <member refid="classGameState_1a805aea59388b8a5f302752333a86cf22" kind="function"><name>render</name></member>
+  </compound>
+  <compound refid="classMainMenuState" kind="class"><name>MainMenuState</name>
+    <member refid="classMainMenuState_1acdf1abf44448f0fccfeeaf1dd5e6bcd0" kind="variable"><name>backgroundTexture</name></member>
+    <member refid="classMainMenuState_1a363a6f6fa36ce9c1e4e9cca32ea9c9cd" kind="variable"><name>background</name></member>
+    <member refid="classMainMenuState_1a452b6e63270b968978ff7fe8267ef15c" kind="variable"><name>font</name></member>
+    <member refid="classMainMenuState_1a7ecf19888c022c96e6cae10cb6f06f15" kind="variable"><name>buttons</name></member>
+    <member refid="classMainMenuState_1a02b29575bd5d10d73f1c311090cce97e" kind="function"><name>initVariables</name></member>
+    <member refid="classMainMenuState_1a53438118c9943ace9a772e0b8ee8acf3" kind="function"><name>initBackground</name></member>
+    <member refid="classMainMenuState_1a6a72ebf025483b548c98e248dd18d313" kind="function"><name>initFonts</name></member>
+    <member refid="classMainMenuState_1a4c6c1e69835faa2b137b838cf7f583ae" kind="function"><name>initKeybinds</name></member>
+    <member refid="classMainMenuState_1a53028c6fad883dc3514fe23edcb8c8aa" kind="function"><name>initButtons</name></member>
+    <member refid="classMainMenuState_1a50733c72ed39f04b1d56c35d4b0b8ffa" kind="function"><name>MainMenuState</name></member>
+    <member refid="classMainMenuState_1a8af4d586b93c315a1a15b5fe83ec0760" kind="function"><name>~MainMenuState</name></member>
+    <member refid="classMainMenuState_1ac5b27a5cc3bc385984564444b31c09b6" kind="function"><name>updateInput</name></member>
+    <member refid="classMainMenuState_1a814fcf755b02804447b0460a57e25833" kind="function"><name>updateButtons</name></member>
+    <member refid="classMainMenuState_1a2cb233d69d9e30f8c4ac24f256d6a3d1" kind="function"><name>update</name></member>
+    <member refid="classMainMenuState_1ad2a3ad7cb783d19b2b865a3695441c4f" kind="function"><name>renderButtons</name></member>
+    <member refid="classMainMenuState_1ad75a3cc4bac3045d2fb167542bafb7c5" kind="function"><name>render</name></member>
+  </compound>
+  <compound refid="classMovementComponent" kind="class"><name>MovementComponent</name>
+    <member refid="classMovementComponent_1a30a668af4d09fa61af7ddb474b5c9cd9" kind="variable"><name>sprite</name></member>
+    <member refid="classMovementComponent_1aab21d3902a1e0a8ae84eaa1703e82ab4" kind="variable"><name>maxVelocity</name></member>
+    <member refid="classMovementComponent_1ac4be228c6916d1326a873b90262bbd42" kind="variable"><name>acceleration</name></member>
+    <member refid="classMovementComponent_1acf75ed689e48457211dbe128a0e5722e" kind="variable"><name>deceleration</name></member>
+    <member refid="classMovementComponent_1aeeef6c503d56b2e28a3d3406a08037a0" kind="variable"><name>velocity</name></member>
+    <member refid="classMovementComponent_1aa8ff04403685cc7301bb59535edf66c9" kind="function"><name>MovementComponent</name></member>
+    <member refid="classMovementComponent_1ac39be9eb1437d87cc50404dfb25487e6" kind="function"><name>~MovementComponent</name></member>
+    <member refid="classMovementComponent_1a3e1518aeeafdbe336159bbbe72c4cd89" kind="function"><name>getVelocity</name></member>
+    <member refid="classMovementComponent_1a5d991681c022928054917ba84093ca6c" kind="function"><name>getState</name></member>
+    <member refid="classMovementComponent_1a8c664f595f76c817eb5932e012dde2d4" kind="function"><name>idle</name></member>
+    <member refid="classMovementComponent_1a417c0fca65d691d7a0a3f61b1a0da6bd" kind="function"><name>moving</name></member>
+    <member refid="classMovementComponent_1a2e955aa3c5f530b616cde9a4a78403ec" kind="function"><name>movingLeft</name></member>
+    <member refid="classMovementComponent_1a228d984e04173b8076a528089d242ced" kind="function"><name>movingRight</name></member>
+    <member refid="classMovementComponent_1adc585c17d7e00142cd09d91714289bf3" kind="function"><name>move</name></member>
+    <member refid="classMovementComponent_1a294d0e9fefa263e20b2f4321a2f39eb0" kind="function"><name>update</name></member>
+  </compound>
+  <compound refid="classPlayer" kind="class"><name>Player</name>
+    <member refid="classPlayer_1a41ed6d3482b0815b564ac401093a297a" kind="function"><name>initVariables</name></member>
+    <member refid="classPlayer_1ac4a2145146b769400b0346d7528861d6" kind="function"><name>initComponents</name></member>
+    <member refid="classPlayer_1a5a4c9d4ad9e4ae95fbf19032b77bb238" kind="function"><name>Player</name></member>
+    <member refid="classPlayer_1a749d2c00e1fe0f5c2746f7505a58c062" kind="function"><name>~Player</name></member>
+    <member refid="classPlayer_1a5304fa0736910ab6ebf822fb494784c8" kind="function"><name>update</name></member>
+  </compound>
+  <compound refid="classState" kind="class"><name>State</name>
+    <member refid="classState_1a5692fac721147048fe1d2656f8a7a687" kind="variable"><name>states</name></member>
+    <member refid="classState_1ae6259a383c98ae7496266a76a9daf478" kind="variable"><name>window</name></member>
+    <member refid="classState_1ace88186091734de43149a68efbe55e35" kind="variable"><name>supportedKeys</name></member>
+    <member refid="classState_1a21d462450f448eeab1e021c78b1b418a" kind="variable"><name>keybinds</name></member>
+    <member refid="classState_1a67102294962f79cfb8fa952a113a351d" kind="variable"><name>quit</name></member>
+    <member refid="classState_1ae55b0beb4bfe6bb44a9fc1fc05d8b90c" kind="variable"><name>mousePosScreen</name></member>
+    <member refid="classState_1ae19be9c58de5545c8cd162f11969d6ee" kind="variable"><name>mousePosWindow</name></member>
+    <member refid="classState_1a9f930912be370fcd0ecae58e17e0c35e" kind="variable"><name>mousePosView</name></member>
+    <member refid="classState_1af747b588cad4683d34c38a03c2f8d046" kind="variable"><name>textures</name></member>
+    <member refid="classState_1a40dbbe230041d608a14cab0268721e3e" kind="function"><name>initKeybinds</name></member>
+    <member refid="classState_1a970569fe825bb7cc18f48fecf4f1b9d1" kind="function"><name>State</name></member>
+    <member refid="classState_1afab438d92b90dc18d194dbd9c9c8bab3" kind="function"><name>~State</name></member>
+    <member refid="classState_1a18c3b970753bab2937141803644aaf24" kind="function"><name>getQuit</name></member>
+    <member refid="classState_1a27907b80e927649f92e4dc6a845a9213" kind="function"><name>endState</name></member>
+    <member refid="classState_1a55cd17e1b46e2a7345f3b98f01c123b8" kind="function"><name>updateMousePositions</name></member>
+    <member refid="classState_1a00168e8529643611cb98497e9f0b48c2" kind="function"><name>updateInput</name></member>
+    <member refid="classState_1a2c2021d448defc57111202b74ed0aaa0" kind="function"><name>update</name></member>
+    <member refid="classState_1aa1f36587befc2c03c4033366e5000d2c" kind="function"><name>render</name></member>
+  </compound>
+  <compound refid="AnimationComponent_8cpp" kind="file"><name>AnimationComponent.cpp</name>
+  </compound>
+  <compound refid="AnimationComponent_8h" kind="file"><name>AnimationComponent.h</name>
+  </compound>
+  <compound refid="Button_8cpp" kind="file"><name>Button.cpp</name>
+  </compound>
+  <compound refid="Button_8h" kind="file"><name>Button.h</name>
+    <member refid="Button_8h_1a11a6094191da43b6b4568e7736fb89ba" kind="enum"><name>button_states</name></member>
+    <member refid="Button_8h_1a11a6094191da43b6b4568e7736fb89baab07455a5cba7480564ccdf0225f8d082" kind="enumvalue"><name>BTN_IDLE</name></member>
+    <member refid="Button_8h_1a11a6094191da43b6b4568e7736fb89baad6fdb8a1568b56acfc5a2870feef75aa" kind="enumvalue"><name>BTN_HOVER</name></member>
+    <member refid="Button_8h_1a11a6094191da43b6b4568e7736fb89baaba1830557d2dc99efd3e5fc8a7dd64ab" kind="enumvalue"><name>BTN_ACTIVE</name></member>
+  </compound>
+  <compound refid="CatchTests_8cpp" kind="file"><name>CatchTests.cpp</name>
+    <member refid="CatchTests_8cpp_1aa4ec48c961d504809d0be6875a90668f" kind="function"><name>TEST_CASE</name></member>
+  </compound>
+  <compound refid="Entity_8cpp" kind="file"><name>Entity.cpp</name>
+  </compound>
+  <compound refid="Entity_8h" kind="file"><name>Entity.h</name>
+  </compound>
+  <compound refid="Game_8cpp" kind="file"><name>Game.cpp</name>
+  </compound>
+  <compound refid="Game_8h" kind="file"><name>Game.h</name>
+  </compound>
+  <compound refid="GameState_8cpp" kind="file"><name>GameState.cpp</name>
+  </compound>
+  <compound refid="GameState_8h" kind="file"><name>GameState.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1ab05eca98d01ed636747eac2ca23aa024" kind="define"><name>mapWidth</name></member>
+    <member refid="main_8cpp_1ae72d347c9b467768a5a970ff3a92c3fd" kind="define"><name>mapHeight</name></member>
+    <member refid="main_8cpp_1a47eacb894c1f11f294bf192b6f4763ed" kind="define"><name>MAP_CELL_SIZE</name></member>
+    <member refid="main_8cpp_1a34b4c3eca7342fbc4cba090d02139902" kind="define"><name>CATCH_CONFIG_RUNNER</name></member>
+    <member refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="MainMenuState_8cpp" kind="file"><name>MainMenuState.cpp</name>
+  </compound>
+  <compound refid="MainMenuState_8h" kind="file"><name>MainMenuState.h</name>
+  </compound>
+  <compound refid="MovementComponent_8cpp" kind="file"><name>MovementComponent.cpp</name>
+  </compound>
+  <compound refid="MovementComponent_8h" kind="file"><name>MovementComponent.h</name>
+    <member refid="MovementComponent_8h_1a4ab8841dc3be7e29bd4704ed45b6a0e4" kind="enum"><name>movement_states</name></member>
+    <member refid="MovementComponent_8h_1a4ab8841dc3be7e29bd4704ed45b6a0e4afd6a0e4343048b10646dd2976cc5ad18" kind="enumvalue"><name>IDLE</name></member>
+    <member refid="MovementComponent_8h_1a4ab8841dc3be7e29bd4704ed45b6a0e4a16ebdcb23eb5337fd5bc598fa8d6035d" kind="enumvalue"><name>MOVING</name></member>
+    <member refid="MovementComponent_8h_1a4ab8841dc3be7e29bd4704ed45b6a0e4af2d17378db8b161d333e0dd8e88ebad9" kind="enumvalue"><name>MOVING_LEFT</name></member>
+    <member refid="MovementComponent_8h_1a4ab8841dc3be7e29bd4704ed45b6a0e4af618166e0dfa62dd63fc0d9f677ca871" kind="enumvalue"><name>MOVING_RIGHT</name></member>
+    <member refid="MovementComponent_8h_1a4ab8841dc3be7e29bd4704ed45b6a0e4ad0d69c60b9d20b96b089b680f8d7566d" kind="enumvalue"><name>MOVING_UP</name></member>
+    <member refid="MovementComponent_8h_1a4ab8841dc3be7e29bd4704ed45b6a0e4aa9afce301988e16292cfcae76a57d9a8" kind="enumvalue"><name>MOVING_DOWN</name></member>
+  </compound>
+  <compound refid="Player_8cpp" kind="file"><name>Player.cpp</name>
+  </compound>
+  <compound refid="Player_8h" kind="file"><name>Player.h</name>
+  </compound>
+  <compound refid="State_8cpp" kind="file"><name>State.cpp</name>
+  </compound>
+  <compound refid="State_8h" kind="file"><name>State.h</name>
+  </compound>
+  <compound refid="dir_fb0004967dbfeb5e6917fe56e65f3841" kind="dir"><name>/home/roman/CLionProjects/ypprpo/gamelib</name>
+  </compound>
+</doxygenindex>

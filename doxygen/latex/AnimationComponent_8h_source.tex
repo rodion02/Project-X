@@ -1,0 +1,93 @@
+\hypertarget{AnimationComponent_8h_source}{}\doxysection{Animation\+Component.\+h}
+\label{AnimationComponent_8h_source}\index{/home/roman/CLionProjects/ypprpo/gamelib/AnimationComponent.h@{/home/roman/CLionProjects/ypprpo/gamelib/AnimationComponent.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by roman on 6/21/22.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef YPPRPO\_ANIMATIONCOMPONENT\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define YPPRPO\_ANIMATIONCOMPONENT\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <SFML/Graphics.hpp>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <SFML/Window.hpp>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <SFML/System.hpp>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <SFML/Audio.hpp>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <SFML/Network.hpp>}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{class }\mbox{\hyperlink{classAnimationComponent}{AnimationComponent}} \{}
+\DoxyCodeLine{19 \textcolor{keyword}{private}:}
+\DoxyCodeLine{20     \textcolor{keyword}{class }Animation \{}
+\DoxyCodeLine{21     \textcolor{keyword}{public}:}
+\DoxyCodeLine{22         \textcolor{comment}{//Variables}}
+\DoxyCodeLine{23         sf::Sprite\& sprite;}
+\DoxyCodeLine{24         sf::Texture\& textureSheet;}
+\DoxyCodeLine{25         \textcolor{keywordtype}{float} animationTimer;}
+\DoxyCodeLine{26         \textcolor{keywordtype}{float} timer;}
+\DoxyCodeLine{27         \textcolor{keywordtype}{int} width;}
+\DoxyCodeLine{28         \textcolor{keywordtype}{int} height;}
+\DoxyCodeLine{29         sf::IntRect startRect;}
+\DoxyCodeLine{30         sf::IntRect currentRect;}
+\DoxyCodeLine{31         sf::IntRect endRect;}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33         Animation(sf::Sprite\& sprite, sf::Texture\& texture\_sheet,}
+\DoxyCodeLine{34                   \textcolor{keywordtype}{float} animation\_timer,}
+\DoxyCodeLine{35                   \textcolor{keywordtype}{int} start\_frame\_x, \textcolor{keywordtype}{int} start\_frame\_y, \textcolor{keywordtype}{int} frames\_x, \textcolor{keywordtype}{int} frames\_y, \textcolor{keywordtype}{int} width, \textcolor{keywordtype}{int} height)}
+\DoxyCodeLine{36            : sprite(sprite), textureSheet(texture\_sheet), animationTimer(animation\_timer), width(width), height(height) \{}
+\DoxyCodeLine{37             this-\/>timer = 0.f;}
+\DoxyCodeLine{38             this-\/>startRect = sf::IntRect(start\_frame\_x * width, start\_frame\_y * height, width, height);}
+\DoxyCodeLine{39             this-\/>currentRect = this-\/>startRect;}
+\DoxyCodeLine{40             this-\/>endRect = sf::IntRect(frames\_x * width, frames\_y * height, width, height);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42             this-\/>sprite.setTexture(this-\/>textureSheet, \textcolor{keyword}{true});}
+\DoxyCodeLine{43             this-\/>sprite.setTextureRect(this-\/>startRect);}
+\DoxyCodeLine{44         \}}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46         \textcolor{comment}{//Functions}}
+\DoxyCodeLine{47         \textcolor{keywordtype}{void} play(\textcolor{keyword}{const} \textcolor{keywordtype}{float}\& dt)\{}
+\DoxyCodeLine{48             \textcolor{comment}{//Update timer}}
+\DoxyCodeLine{49             this-\/>timer += 100.f * dt;}
+\DoxyCodeLine{50             \textcolor{keywordflow}{if} (this-\/>timer >= this-\/>animationTimer)\{}
+\DoxyCodeLine{51                 \textcolor{comment}{//reset timer}}
+\DoxyCodeLine{52                 this-\/>timer = 0.f;}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54                 \textcolor{comment}{//Animate}}
+\DoxyCodeLine{55                 \textcolor{keywordflow}{if}(this-\/>currentRect != this-\/>endRect)\{}
+\DoxyCodeLine{56                     this-\/>currentRect.left += this-\/>width;}
+\DoxyCodeLine{57                 \}}
+\DoxyCodeLine{58                 \textcolor{keywordflow}{else}\{ \textcolor{comment}{//Reset}}
+\DoxyCodeLine{59                     this-\/>currentRect.left = this-\/>startRect.left;}
+\DoxyCodeLine{60                 \}}
+\DoxyCodeLine{61                 this-\/>sprite.setTextureRect(this-\/>currentRect);}
+\DoxyCodeLine{62             \}}
+\DoxyCodeLine{63         \}}
+\DoxyCodeLine{64         \textcolor{keywordtype}{void} reset()\{}
+\DoxyCodeLine{65             this-\/>timer = 0.f;}
+\DoxyCodeLine{66             this-\/>currentRect = this-\/>startRect;}
+\DoxyCodeLine{67         \}}
+\DoxyCodeLine{68     \};}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70     sf::Sprite\& sprite;}
+\DoxyCodeLine{71     sf::Texture\& textureSheet;}
+\DoxyCodeLine{72     std::map<std::string, Animation*> animations;}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74 \textcolor{keyword}{public}:}
+\DoxyCodeLine{75     \mbox{\hyperlink{classAnimationComponent}{AnimationComponent}}(sf::Sprite\& sprite, sf::Texture\& texture\_sheet);}
+\DoxyCodeLine{76     \textcolor{keyword}{virtual} \mbox{\hyperlink{classAnimationComponent}{\string~AnimationComponent}}();}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78     \textcolor{comment}{//Functions}}
+\DoxyCodeLine{79     \textcolor{keywordtype}{void} addAnimation(\textcolor{keyword}{const} std::string key,}
+\DoxyCodeLine{80                       \textcolor{keywordtype}{float} animation\_timer,}
+\DoxyCodeLine{81                       \textcolor{keywordtype}{int} start\_frame\_x, \textcolor{keywordtype}{int} start\_frame\_y, \textcolor{keywordtype}{int} frames\_x, \textcolor{keywordtype}{int} frames\_y, \textcolor{keywordtype}{int} width, \textcolor{keywordtype}{int} height);}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83     \textcolor{keywordtype}{void} play(\textcolor{keyword}{const} std::string key, \textcolor{keyword}{const} \textcolor{keywordtype}{float}\& dt);}
+\DoxyCodeLine{84 \};}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//YPPRPO\_ANIMATIONCOMPONENT\_H}}
+
+\end{DoxyCode}

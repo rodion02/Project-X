@@ -1,0 +1,44 @@
+\hypertarget{Entity_8h_source}{}\doxysection{Entity.\+h}
+\label{Entity_8h_source}\index{/home/roman/CLionProjects/ypprpo/gamelib/Entity.h@{/home/roman/CLionProjects/ypprpo/gamelib/Entity.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by roman on 5/6/22.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef YPPRPO\_ENTITY\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define YPPRPO\_ENTITY\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}MovementComponent.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}AnimationComponent.h"{}}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{comment}{// base for characters}}
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{classEntity}{Entity}} \{}
+\DoxyCodeLine{13 \textcolor{keyword}{private}:}
+\DoxyCodeLine{14     \textcolor{keywordtype}{void} initVariables();}
+\DoxyCodeLine{15 \textcolor{comment}{//everything under protected can be accessed in child class}}
+\DoxyCodeLine{16 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{17     sf::Sprite sprite;}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19     \mbox{\hyperlink{classMovementComponent}{MovementComponent}}* movementComponent;}
+\DoxyCodeLine{20     \mbox{\hyperlink{classAnimationComponent}{AnimationComponent}}* animationComponent;}
+\DoxyCodeLine{21 \textcolor{keyword}{public}:}
+\DoxyCodeLine{22     \mbox{\hyperlink{classEntity}{Entity}}();}
+\DoxyCodeLine{23     \textcolor{keyword}{virtual} \mbox{\hyperlink{classEntity}{\string~Entity}}();}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     \textcolor{comment}{//Component functions}}
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} setTexture(sf::Texture\& texture);}
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} createMovementComponent(\textcolor{keyword}{const} \textcolor{keywordtype}{float} maxVelocity, \textcolor{keyword}{const} \textcolor{keywordtype}{float} acceleration, \textcolor{keyword}{const} \textcolor{keywordtype}{float} deceleration);}
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} createAnimationComponent(sf::Texture\& texture\_sheet);}
+\DoxyCodeLine{29     \textcolor{comment}{//Functions}}
+\DoxyCodeLine{30     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} setPosition(\textcolor{keyword}{const} \textcolor{keywordtype}{float} x, \textcolor{keyword}{const} \textcolor{keywordtype}{float} y);}
+\DoxyCodeLine{31     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} move(\textcolor{keyword}{const} \textcolor{keywordtype}{float} x, \textcolor{keyword}{const} \textcolor{keywordtype}{float} y, \textcolor{keyword}{const} \textcolor{keywordtype}{float}\& dt);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} update(\textcolor{keyword}{const} \textcolor{keywordtype}{float}\& dt) ;}
+\DoxyCodeLine{34     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} render(sf::RenderTarget* target) ;}
+\DoxyCodeLine{35 \};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//YPPRPO\_ENTITY\_H}}
+
+\end{DoxyCode}

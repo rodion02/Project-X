@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classMainMenuState" kind="class" language="C++" prot="public">
+    <compoundname>MainMenuState</compoundname>
+    <basecompoundref refid="classState" prot="public" virt="non-virtual">State</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMainMenuState_1acdf1abf44448f0fccfeeaf1dd5e6bcd0" prot="private" static="no" mutable="no">
+        <type>sf::Texture</type>
+        <definition>sf::Texture MainMenuState::backgroundTexture</definition>
+        <argsstring></argsstring>
+        <name>backgroundTexture</name>
+        <qualifiedname>MainMenuState::backgroundTexture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.h" line="14" column="17" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainMenuState_1a363a6f6fa36ce9c1e4e9cca32ea9c9cd" prot="private" static="no" mutable="no">
+        <type>sf::RectangleShape</type>
+        <definition>sf::RectangleShape MainMenuState::background</definition>
+        <argsstring></argsstring>
+        <name>background</name>
+        <qualifiedname>MainMenuState::background</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.h" line="15" column="24" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainMenuState_1a452b6e63270b968978ff7fe8267ef15c" prot="private" static="no" mutable="no">
+        <type>sf::Font</type>
+        <definition>sf::Font MainMenuState::font</definition>
+        <argsstring></argsstring>
+        <name>font</name>
+        <qualifiedname>MainMenuState::font</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.h" line="16" column="14" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainMenuState_1a7ecf19888c022c96e6cae10cb6f06f15" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, <ref refid="classButton" kindref="compound">Button</ref> * &gt;</type>
+        <definition>std::map&lt;std::string, Button*&gt; MainMenuState::buttons</definition>
+        <argsstring></argsstring>
+        <name>buttons</name>
+        <qualifiedname>MainMenuState::buttons</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.h" line="18" column="14" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMainMenuState_1a02b29575bd5d10d73f1c311090cce97e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainMenuState::initVariables</definition>
+        <argsstring>()</argsstring>
+        <name>initVariables</name>
+        <qualifiedname>MainMenuState::initVariables</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.h" line="20" column="10" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.cpp" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainMenuState_1a53438118c9943ace9a772e0b8ee8acf3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainMenuState::initBackground</definition>
+        <argsstring>()</argsstring>
+        <name>initBackground</name>
+        <qualifiedname>MainMenuState::initBackground</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.h" line="21" column="10" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.cpp" bodystart="12" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainMenuState_1a6a72ebf025483b548c98e248dd18d313" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainMenuState::initFonts</definition>
+        <argsstring>()</argsstring>
+        <name>initFonts</name>
+        <qualifiedname>MainMenuState::initFonts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.h" line="22" column="10" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.cpp" bodystart="25" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainMenuState_1a4c6c1e69835faa2b137b838cf7f583ae" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MainMenuState::initKeybinds</definition>
+        <argsstring>()</argsstring>
+        <name>initKeybinds</name>
+        <qualifiedname>MainMenuState::initKeybinds</qualifiedname>
+        <reimplements refid="classState_1a40dbbe230041d608a14cab0268721e3e">initKeybinds</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.h" line="23" column="10" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.cpp" bodystart="31" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainMenuState_1a53028c6fad883dc3514fe23edcb8c8aa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainMenuState::initButtons</definition>
+        <argsstring>()</argsstring>
+        <name>initButtons</name>
+        <qualifiedname>MainMenuState::initButtons</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.h" line="24" column="10" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.cpp" bodystart="45" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMainMenuState_1a50733c72ed39f04b1d56c35d4b0b8ffa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainMenuState::MainMenuState</definition>
+        <argsstring>(sf::RenderWindow *window, std::map&lt; std::string, int &gt; *supportedKeys, std::stack&lt; State * &gt; *states)</argsstring>
+        <name>MainMenuState</name>
+        <qualifiedname>MainMenuState::MainMenuState</qualifiedname>
+        <param>
+          <type>sf::RenderWindow *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type>std::map&lt; std::string, int &gt; *</type>
+          <declname>supportedKeys</declname>
+        </param>
+        <param>
+          <type>std::stack&lt; <ref refid="classState" kindref="compound">State</ref> * &gt; *</type>
+          <declname>states</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.h" line="26" column="5" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.cpp" bodystart="80" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainMenuState_1a8af4d586b93c315a1a15b5fe83ec0760" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>MainMenuState::~MainMenuState</definition>
+        <argsstring>()</argsstring>
+        <name>~MainMenuState</name>
+        <qualifiedname>MainMenuState::~MainMenuState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.h" line="27" column="13" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.cpp" bodystart="90" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainMenuState_1ac5b27a5cc3bc385984564444b31c09b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MainMenuState::updateInput</definition>
+        <argsstring>(const float &amp;dt)</argsstring>
+        <name>updateInput</name>
+        <qualifiedname>MainMenuState::updateInput</qualifiedname>
+        <reimplements refid="classState_1a00168e8529643611cb98497e9f0b48c2">updateInput</reimplements>
+        <param>
+          <type>const float &amp;</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.h" line="30" column="10" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.cpp" bodystart="98" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainMenuState_1a814fcf755b02804447b0460a57e25833" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainMenuState::updateButtons</definition>
+        <argsstring>()</argsstring>
+        <name>updateButtons</name>
+        <qualifiedname>MainMenuState::updateButtons</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.h" line="31" column="10" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.cpp" bodystart="102" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainMenuState_1a2cb233d69d9e30f8c4ac24f256d6a3d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MainMenuState::update</definition>
+        <argsstring>(const float &amp;dt)</argsstring>
+        <name>update</name>
+        <qualifiedname>MainMenuState::update</qualifiedname>
+        <reimplements refid="classState_1a2c2021d448defc57111202b74ed0aaa0">update</reimplements>
+        <param>
+          <type>const float &amp;</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.h" line="32" column="10" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.cpp" bodystart="119" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainMenuState_1ad2a3ad7cb783d19b2b865a3695441c4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainMenuState::renderButtons</definition>
+        <argsstring>(sf::RenderTarget *target=nullptr)</argsstring>
+        <name>renderButtons</name>
+        <qualifiedname>MainMenuState::renderButtons</qualifiedname>
+        <param>
+          <type>sf::RenderTarget *</type>
+          <declname>target</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.h" line="33" column="11" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.cpp" bodystart="125" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainMenuState_1ad75a3cc4bac3045d2fb167542bafb7c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MainMenuState::render</definition>
+        <argsstring>(sf::RenderTarget *target=nullptr)</argsstring>
+        <name>render</name>
+        <qualifiedname>MainMenuState::render</qualifiedname>
+        <reimplements refid="classState_1aa1f36587befc2c03c4033366e5000d2c">render</reimplements>
+        <param>
+          <type>sf::RenderTarget *</type>
+          <declname>target</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.h" line="34" column="10" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.cpp" bodystart="132" bodyend="150"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>MainMenuState</label>
+        <link refid="classMainMenuState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>State</label>
+        <link refid="classState"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>MainMenuState</label>
+        <link refid="classMainMenuState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>State</label>
+        <link refid="classState"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.h" line="10" column="1" bodyfile="/home/roman/CLionProjects/ypprpo/gamelib/MainMenuState.h" bodystart="11" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classMainMenuState_1a363a6f6fa36ce9c1e4e9cca32ea9c9cd" prot="private" virt="non-virtual"><scope>MainMenuState</scope><name>background</name></member>
+      <member refid="classMainMenuState_1acdf1abf44448f0fccfeeaf1dd5e6bcd0" prot="private" virt="non-virtual"><scope>MainMenuState</scope><name>backgroundTexture</name></member>
+      <member refid="classMainMenuState_1a7ecf19888c022c96e6cae10cb6f06f15" prot="private" virt="non-virtual"><scope>MainMenuState</scope><name>buttons</name></member>
+      <member refid="classState_1a27907b80e927649f92e4dc6a845a9213" prot="public" virt="non-virtual"><scope>MainMenuState</scope><name>endState</name></member>
+      <member refid="classMainMenuState_1a452b6e63270b968978ff7fe8267ef15c" prot="private" virt="non-virtual"><scope>MainMenuState</scope><name>font</name></member>
+      <member refid="classState_1a18c3b970753bab2937141803644aaf24" prot="public" virt="non-virtual"><scope>MainMenuState</scope><name>getQuit</name></member>
+      <member refid="classMainMenuState_1a53438118c9943ace9a772e0b8ee8acf3" prot="private" virt="non-virtual"><scope>MainMenuState</scope><name>initBackground</name></member>
+      <member refid="classMainMenuState_1a53028c6fad883dc3514fe23edcb8c8aa" prot="private" virt="non-virtual"><scope>MainMenuState</scope><name>initButtons</name></member>
+      <member refid="classMainMenuState_1a6a72ebf025483b548c98e248dd18d313" prot="private" virt="non-virtual"><scope>MainMenuState</scope><name>initFonts</name></member>
+      <member refid="classMainMenuState_1a4c6c1e69835faa2b137b838cf7f583ae" prot="private" virt="virtual"><scope>MainMenuState</scope><name>initKeybinds</name></member>
+      <member refid="classMainMenuState_1a02b29575bd5d10d73f1c311090cce97e" prot="private" virt="non-virtual"><scope>MainMenuState</scope><name>initVariables</name></member>
+      <member refid="classState_1a21d462450f448eeab1e021c78b1b418a" prot="protected" virt="non-virtual"><scope>MainMenuState</scope><name>keybinds</name></member>
+      <member refid="classMainMenuState_1a50733c72ed39f04b1d56c35d4b0b8ffa" prot="public" virt="non-virtual"><scope>MainMenuState</scope><name>MainMenuState</name></member>
+      <member refid="classState_1ae55b0beb4bfe6bb44a9fc1fc05d8b90c" prot="protected" virt="non-virtual"><scope>MainMenuState</scope><name>mousePosScreen</name></member>
+      <member refid="classState_1a9f930912be370fcd0ecae58e17e0c35e" prot="protected" virt="non-virtual"><scope>MainMenuState</scope><name>mousePosView</name></member>
+      <member refid="classState_1ae19be9c58de5545c8cd162f11969d6ee" prot="protected" virt="non-virtual"><scope>MainMenuState</scope><name>mousePosWindow</name></member>
+      <member refid="classState_1a67102294962f79cfb8fa952a113a351d" prot="protected" virt="non-virtual"><scope>MainMenuState</scope><name>quit</name></member>
+      <member refid="classMainMenuState_1ad75a3cc4bac3045d2fb167542bafb7c5" prot="public" virt="virtual"><scope>MainMenuState</scope><name>render</name></member>
+      <member refid="classMainMenuState_1ad2a3ad7cb783d19b2b865a3695441c4f" prot="public" virt="non-virtual"><scope>MainMenuState</scope><name>renderButtons</name></member>
+      <member refid="classState_1a970569fe825bb7cc18f48fecf4f1b9d1" prot="public" virt="non-virtual"><scope>MainMenuState</scope><name>State</name></member>
+      <member refid="classState_1a5692fac721147048fe1d2656f8a7a687" prot="protected" virt="non-virtual"><scope>MainMenuState</scope><name>states</name></member>
+      <member refid="classState_1ace88186091734de43149a68efbe55e35" prot="protected" virt="non-virtual"><scope>MainMenuState</scope><name>supportedKeys</name></member>
+      <member refid="classState_1af747b588cad4683d34c38a03c2f8d046" prot="protected" virt="non-virtual"><scope>MainMenuState</scope><name>textures</name></member>
+      <member refid="classMainMenuState_1a2cb233d69d9e30f8c4ac24f256d6a3d1" prot="public" virt="virtual"><scope>MainMenuState</scope><name>update</name></member>
+      <member refid="classMainMenuState_1a814fcf755b02804447b0460a57e25833" prot="public" virt="non-virtual"><scope>MainMenuState</scope><name>updateButtons</name></member>
+      <member refid="classMainMenuState_1ac5b27a5cc3bc385984564444b31c09b6" prot="public" virt="virtual"><scope>MainMenuState</scope><name>updateInput</name></member>
+      <member refid="classState_1a55cd17e1b46e2a7345f3b98f01c123b8" prot="public" virt="virtual"><scope>MainMenuState</scope><name>updateMousePositions</name></member>
+      <member refid="classState_1ae6259a383c98ae7496266a76a9daf478" prot="protected" virt="non-virtual"><scope>MainMenuState</scope><name>window</name></member>
+      <member refid="classMainMenuState_1a8af4d586b93c315a1a15b5fe83ec0760" prot="public" virt="virtual"><scope>MainMenuState</scope><name>~MainMenuState</name></member>
+      <member refid="classState_1afab438d92b90dc18d194dbd9c9c8bab3" prot="public" virt="virtual"><scope>MainMenuState</scope><name>~State</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

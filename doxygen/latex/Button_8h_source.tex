@@ -1,0 +1,54 @@
+\hypertarget{Button_8h_source}{}\doxysection{Button.\+h}
+\label{Button_8h_source}\index{/home/roman/CLionProjects/ypprpo/gamelib/Button.h@{/home/roman/CLionProjects/ypprpo/gamelib/Button.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#ifndef YPPRPO\_BUTTON\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#define YPPRPO\_BUTTON\_H}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <ctime>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <cstdlib>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <SFML/Graphics.hpp>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <SFML/Window.hpp>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <SFML/System.hpp>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <SFML/Audio.hpp>}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{enum} button\_states\{BTN\_IDLE = 0, BTN\_HOVER, BTN\_ACTIVE\};}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{classButton}{Button}} \{}
+\DoxyCodeLine{17 \textcolor{keyword}{private}:}
+\DoxyCodeLine{18     \textcolor{keywordtype}{short} \textcolor{keywordtype}{unsigned} buttonState;}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     sf::RectangleShape shape;}
+\DoxyCodeLine{21     sf::Font* font;}
+\DoxyCodeLine{22     sf::Text text;}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24     sf::Color textIdleColor;}
+\DoxyCodeLine{25     sf::Color textHoverColor;}
+\DoxyCodeLine{26     sf::Color textActiveColor;}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     sf::Color idleColor;}
+\DoxyCodeLine{29     sf::Color hoverColor;}
+\DoxyCodeLine{30     sf::Color activeColor;}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{keyword}{public}:}
+\DoxyCodeLine{33     \mbox{\hyperlink{classButton}{Button}}(\textcolor{keywordtype}{float} x, \textcolor{keywordtype}{float} y, \textcolor{keywordtype}{float} width, \textcolor{keywordtype}{float} height,}
+\DoxyCodeLine{34            sf::Font* font, std::string text, \textcolor{keywordtype}{unsigned} character\_size,}
+\DoxyCodeLine{35            sf::Color text\_idle\_color, sf::Color text\_hover\_color, sf::Color text\_active\_color,}
+\DoxyCodeLine{36            sf::Color idle\_color, sf::Color hover\_color, sf::Color active\_color);}
+\DoxyCodeLine{37     \mbox{\hyperlink{classButton}{\string~Button}}();}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39     \textcolor{comment}{//Accessors}}
+\DoxyCodeLine{40     \textcolor{keyword}{const} \textcolor{keywordtype}{bool} isPressed() \textcolor{keyword}{const};}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \textcolor{comment}{//Functions}}
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} update(\textcolor{keyword}{const} sf::Vector2f mousePos);}
+\DoxyCodeLine{44     \textcolor{keywordtype}{void} render(sf::RenderTarget* target);}
+\DoxyCodeLine{45 \};}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//YPPRPO\_BUTTON\_H}}
+
+\end{DoxyCode}

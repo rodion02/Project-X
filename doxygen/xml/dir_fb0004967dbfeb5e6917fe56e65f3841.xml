@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_fb0004967dbfeb5e6917fe56e65f3841" kind="dir">
+    <compoundname>/home/roman/CLionProjects/ypprpo/gamelib</compoundname>
+    <innerfile refid="AnimationComponent_8cpp">AnimationComponent.cpp</innerfile>
+    <innerfile refid="AnimationComponent_8h">AnimationComponent.h</innerfile>
+    <innerfile refid="Button_8cpp">Button.cpp</innerfile>
+    <innerfile refid="Button_8h">Button.h</innerfile>
+    <innerfile refid="CatchTests_8cpp">CatchTests.cpp</innerfile>
+    <innerfile refid="Entity_8cpp">Entity.cpp</innerfile>
+    <innerfile refid="Entity_8h">Entity.h</innerfile>
+    <innerfile refid="Game_8cpp">Game.cpp</innerfile>
+    <innerfile refid="Game_8h">Game.h</innerfile>
+    <innerfile refid="GameState_8cpp">GameState.cpp</innerfile>
+    <innerfile refid="GameState_8h">GameState.h</innerfile>
+    <innerfile refid="main_8cpp">main.cpp</innerfile>
+    <innerfile refid="MainMenuState_8cpp">MainMenuState.cpp</innerfile>
+    <innerfile refid="MainMenuState_8h">MainMenuState.h</innerfile>
+    <innerfile refid="MovementComponent_8cpp">MovementComponent.cpp</innerfile>
+    <innerfile refid="MovementComponent_8h">MovementComponent.h</innerfile>
+    <innerfile refid="Player_8cpp">Player.cpp</innerfile>
+    <innerfile refid="Player_8h">Player.h</innerfile>
+    <innerfile refid="State_8cpp">State.cpp</innerfile>
+    <innerfile refid="State_8h">State.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/roman/CLionProjects/ypprpo/gamelib/"/>
+  </compounddef>
+</doxygen>
