@@ -5,7 +5,7 @@
 #include <iostream>
 #include <sstream>
 #include "Game.h"
-#include "catch2/catch_session.hpp"
+//#include "catch2/catch_session.hpp"
 
 #define mapWidth 24
 #define mapHeight 24
