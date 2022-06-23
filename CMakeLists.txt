@@ -3,8 +3,8 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 project ("ypprpo")
 
 set(CMAKE_CXX_STANDARD 23)
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fprofile-arcs -ftest-coverage")
-set(CMAKE_CXX_FLAGS " ${CMAKE_CXX_FLAGS} -fprofile-arcs -ftest-coverage")
+#set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fprofile-arcs -ftest-coverage")
+#set(CMAKE_CXX_FLAGS " ${CMAKE_CXX_FLAGS} -fprofile-arcs -ftest-coverage")
 
 
 Include(FetchContent)
