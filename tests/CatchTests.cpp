@@ -8,7 +8,7 @@
 
 #include "catch2/catch_test_macros.hpp"
 
-#include "Game.h"
+#include "../gamelib/Game.h"
 
 
 TEST_CASE("sf::RenderWindow", "[renderwindow]")
