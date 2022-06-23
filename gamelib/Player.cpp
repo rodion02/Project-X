@@ -2,7 +2,7 @@
 // Created by roman on 6/19/22.
 //
 
-#include "../Player.h"
+#include "Player.h"
 
 //Initializer functions
 void Player::initVariables() {
