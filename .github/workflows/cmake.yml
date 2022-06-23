@@ -22,6 +22,10 @@ jobs:
     
     - name: Install sfml
       run: sudo apt-get update && sudo apt-get install libsfml-dev
+    - name: Install doxygen
+      run: sudo apt-add-repository universe && sudo apt-get update && sudo apt-get install doxygen
+    - name: Install spinx and breathe
+      run: pip install -U sphinx && pip install sphinx_rtd_theme && pip install breathe 
 
 
     - name: Configure CMake
